@@ -21,7 +21,7 @@ function Header() {
     };
 
     return (
-        <div>
+        <Box>
             <CallToAction />
             <AppBar position="static" sx={{ backgroundColor: 'white', color: 'black' }}>
                 <Container maxWidth="xl">
@@ -126,7 +126,7 @@ function Header() {
                     </Toolbar>
                 </Container>
             </AppBar>
-        </div>
+        </Box>
     );
 }
 export default Header;
