@@ -70,7 +70,7 @@ function Hero() {
                     </Button>
                 </Grid>
 
-        </Box >
+            </Box >
 
     
 
