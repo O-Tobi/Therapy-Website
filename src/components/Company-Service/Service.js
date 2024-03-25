@@ -1,21 +1,30 @@
 import { Container, Box, Typography } from "@mui/material";
 import ServiceCard from "./Service-Card";
-
+import Happy from './../../assets/happy_family.jpg'
 
 
 function Service () {
     const cardProps = [
         {
             id: 1,
-            cardImg: "./../../assets/happy_family.jpg",
-            cardTitle: "Lizard",
-            cardText: "Lizards gggggg  gggg  of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"  
+            cardImg: `${Happy}`,
+            cardTitle: "Counseling Services",
+            cardText: "A truly unique experience where you're encouraged to rediscover yourself, heal, and grow.",
+            cardAlt: "Counseling services"
         },
         {
             id: 2,
-            cardImg: "./../../assets/happy_family.jpg",
-            cardTitle: "Agama Lizard",
-            cardText: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"  
+            cardImg: `${Happy}`,
+            cardTitle: "Equine-Facilitated Psychotherapy",
+            cardText: "We partner with Saving Grace Farm to give all patients access to a unique and timeless therapy.",
+            cardAlt: "elizabethyyyyyy"
+        },
+        {
+            id: 3,
+            cardImg: `${Happy}`,
+            cardTitle: "Clinical Supervision",
+            cardText: "This is perfect for someone who is dedicated and excited about their profession as a therapist!",
+            cardAlt: "elizabeth fresh"
         }
     ];
     
@@ -65,14 +74,29 @@ function Service () {
                     We care about you and your ability to thrive! We're a proud believer in positive psychology and the ability to work past all of life's curveballs. We provide mental health services to children, adolescents, adults, couples, and families. Our mission is to help clients overcome the stress in their lives at any stage.
                 </Typography>
             </Box>
-            {cardProps.map((cardProp) => (
-                    <ServiceCard
-                        key={cardProp.id}
-                        cardImg={cardProp.cardImg}
-                        cardTitle={cardProp.cardTitle}
-                        cardText={cardProp.cardText}
-                    />
-                ))}
+            
+            <Box
+            sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', // Responsive grid with minimum item width of 200px
+                gridGap: '10px',
+                justifyItems: 'center',
+                alignItems: 'center',
+                padding: '10px',
+                marginY: '10px',
+                backgroundColor: 'red',
+                
+            }}>
+                {cardProps.map((cardProp) => (
+                        <ServiceCard
+                            key={cardProp.id}
+                            cardImg={cardProp.cardImg}
+                            cardTitle={cardProp.cardTitle}
+                            cardText={cardProp.cardText}
+                            cardAlt={cardProp.cardAlt}
+                        />
+                    ))}
+            </Box>
 
 
         </Container>

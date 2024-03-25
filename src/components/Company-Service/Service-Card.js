@@ -9,29 +9,54 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 function ServiceCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image= {props.cardImg}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.cardTitle}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {props.CardText}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-      </CardActions>
-    </Card>
+    <Card
+    sx={{
+      
+      maxWidth: 345, 
+      borderRadius: 3,
+      display: 'flex',
+      flexDirection: 'column',
+      flexWrap: 'wrap',
+      alignSelf: 'normal',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+    }}
+  >
+    <CardActionArea>
+      <CardMedia
+        component="img"
+        height="180"
+        image={props.cardImg}
+        alt={props.cardAlt}
+      />
+      <CardContent>
+        <Typography 
+          gutterBottom 
+          variant="h5" 
+          component="div"
+          sx={{ 
+            fontSize: { xs: '1rem', sm: '1.5rem', md: '1.5rem', lg: '1.5rem' }, 
+            fontWeight: 'bold',
+          }}
+        >
+          {props.cardTitle}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {props.cardText}
+        </Typography>
+      </CardContent>
+    </CardActionArea>
+    <CardActions>
+      <Button 
+      variant='contained' 
+      color="primary"
+      fullWidth
+      >
+        Share
+      </Button>
+    </CardActions>
+  </Card>
+  
   );
 }
 
