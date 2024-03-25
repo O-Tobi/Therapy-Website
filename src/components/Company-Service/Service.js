@@ -3,7 +3,7 @@ import { Container, Box, Typography, Grid } from "@mui/material";
 function Service () {
     return (
         <Container sx={{
-            marginTop: '60px',
+            marginTop: {xs: '20px', md: '40px', lg: '50px'},
         }}>
             <Box>
                 <Typography
@@ -11,13 +11,17 @@ function Service () {
                 component="h1"
                 sx= {{
                    textAlign: 'center',
-                   fontWeight: '200',
-                   color: '#496989'
+                   fontWeight: '350',
+                   color: '#008DDA',
+                   fontSize: {xs:'2.5rem', sm:'3rem', md: '5rem', lg: '5rem'},
 
                 }}>
                 A safe therapeutic environment is important
                 </Typography>
-                <Typography>
+                <Typography
+                variant="subtitle"
+                component="h2">
+
                     As you make steps towards change
                 </Typography>
                 <Typography>
