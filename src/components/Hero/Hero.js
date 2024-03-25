@@ -4,28 +4,19 @@ import Happy from './../../assets/happy_family.jpg'; // Assuming jpg format
 
 function Hero() {
     return (
-        <Box>
-            <Box
+        
+        <Box
                 sx={{
                     position: 'relative',
-                    height: '80vh', // Maintain full viewport height by default
+                    height: {xs: '50vh', sm: '50vh', md: '80vh', lg: '80vh'}, // Maintain full viewport height by default
                     backgroundImage: `url(${Happy})`,
                     backgroundRepeat: 'no-repeat', // Prevent image tiling
                     backgroundSize: 'cover', // Cover the entire background area
                     backgroundPosition: 'center', // Center the image horizontally and vertically
                     display: 'flex',
                     justifyContent: 'center',
-                    alignItems: 'flex-start',
+                    alignItems: {xs: 'center', sm: 'center', md: 'flex-start', lg:'flex-start'},
                     flexDirection: 'column',
-                    '@media (max-width: 600px)': { // Adjust height for small screens
-                        height: '50vh',
-                    },
-                    '@media (min-width: 601px) and (max-width: 960px)': { // Adjust height for medium screens
-                        height: '80vh',
-                    },
-                    /* '@media (min-width: 961px)': { // Adjust height for large screens
-                        height: '100vh',
-                    }, */
                 }}
             >
                 {/* Dark overlay (optional) */}
@@ -45,26 +36,29 @@ function Hero() {
                 {/* Content */}
                 <Grid
                     item
-                    md={6} // Adjust width for larger screens
-                    lg={4} // Further adjust width for even larger screens
+                    xs={12}
+                    sm={12}
+                    md={8} // Adjust width for larger screens
+                    lg={8} // Further adjust width for even larger screens
                     sx={{
-                        display: { xs: 'none', md: 'block' },
+                        textAlign: {xs: 'center', sm:'center',md: 'left', lg: 'left'},
+                        px: {md: '60px', lg: '60px'},
                         color: 'white',
                         position: 'relative',
                         zIndex: 2, // Ensure content is above overlay
-                        textAlign: 'left', // Align text to the left
-                        padding: 2, // Add padding to the content
+                        py: 2, // Add padding to the content
                     }}
                 >
-                    <Typography variant="h3" component="h1" gutterBottom sx={{ fontSize: { md: '2rem', lg: '3rem' } }}>
+                    <Typography variant="h3" component="h1" gutterBottom sx={{ fontSize: {xs:'1.5rem',sm: '1.5rem', md: '3rem', lg: '3rem' } }}>
                         Mental Health Therapy
                     </Typography>
-                    <Typography variant="subtitle1" gutterBottom sx={{ fontSize: { md: '.8rem', lg: '1rem' }, textTransform: 'uppercase', letterSpacing: '.3rem', paddingBottom: '15px' }}>
+                    <Typography variant="subtitle1" gutterBottom sx={{ fontSize: {xs:'.5rem',sm: '.5rem', md: '1rem', lg: '1rem' }, textTransform: 'uppercase', letterSpacing: '.3rem', paddingBottom: '15px' }}>
                         For every age, stage & Part of life
                     </Typography>
                     <Button
                         variant="contained"
                         sx={{
+                            fontSize: {xs:'.5rem',sm: '.5rem', md: '1rem', lg: '1rem' },
                             color: 'white',
                             px: '1.5rem',
                             fontWeight: 'bold',
@@ -76,44 +70,9 @@ function Hero() {
                     </Button>
                 </Grid>
 
-            </Box >
+        </Box >
 
-            {/* Typography Grid diplay on small devices */}
-            <Grid
-                item
-                xs={12}
-                sm={12}
-                sx={{
-                    display: { xs: 'block', md: 'none' },
-                    color: 'primary',
-                    position: 'relative',
-                    zIndex: 2, // Ensure content is above overlay
-                    textAlign: 'center', // Align text to the left
-                    padding: 2, // Add padding to the content
-                }}
-            >
-                <Typography variant="h3" component="h1" gutterBottom sx={{ fontSize: { xs: '2rem', sm: '2.5rem' } }}>
-                    Mental Health Therapy
-                </Typography>
-                <Typography variant="subtitle1" gutterBottom sx={{ fontSize: { xs: '1rem', sm: '1.25rem' }, textTransform: 'uppercase', letterSpacing: '.2rem', paddingBottom: '10px' }}>
-                    For every age, stage & Part of life
-                </Typography>
-                <Button
-                    variant="contained"
-                    sx={{
-
-                        px: '1rem',
-                        fontWeight: 'bold',
-                        borderRadius: '25px',
-                        textTransform: 'uppercase',
-
-                    }}
-                >
-                    view our services
-                </Button>
-            </Grid>
-            {/* Typography Grid diplay on small devices ends here */}
-        </Box>
+    
 
     );
 }
