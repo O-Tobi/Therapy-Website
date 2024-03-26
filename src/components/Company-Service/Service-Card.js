@@ -18,6 +18,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
           height: 380,
           maxWidth: 300,
           borderRadius: 3,
+          marginBottom: 2,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -53,6 +54,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
           sx={{
             letterSpacing: '.3rem',
             fontSize: '.5rem',
+            backgroundColor: props.buttonColor,
           }}
         >
           Learn more

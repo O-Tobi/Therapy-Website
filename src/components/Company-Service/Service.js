@@ -11,21 +11,24 @@ function Service () {
             cardImg: `${Happy}`,
             cardTitle: "Counseling Services",
             cardText: "A truly unique experience where you're encouraged to rediscover yourself, heal, and grow.",
-            cardAlt: "Counseling services"
+            cardAlt: "Counseling services",
+            buttonColor: "#FFAF45"
         },
         {
             id: 2,
             cardImg: `${Happy}`,
             cardTitle: "Equine-Facilitated Psychotherapy",
             cardText: "We partner with Saving Grace Farm to give all patients access to a unique and timeless therapy.",
-            cardAlt: "elizabethyyyyyy"
+            cardAlt: "elizabethyyyyyy",
+            buttonColor: "#008DDA"  
         },
         {
             id: 3,
             cardImg: `${Happy}`,
             cardTitle: "Clinical Supervision",
             cardText: "This is perfect for someone who is dedicated and excited about their profession as a therapist!",
-            cardAlt: "elizabeth fresh"
+            cardAlt: "elizabeth fresh",
+            buttonColor: "#FB6D48"
         }
     ];
     
@@ -42,7 +45,6 @@ function Service () {
                             alignItems: 'center',
                             padding: '10px',
                             marginY: '50px',
-                            /* backgroundColor: 'blue', */
                             
                         }}>
                             {cardProps.map((cardProp) => (
@@ -52,6 +54,7 @@ function Service () {
                                         cardTitle={cardProp.cardTitle}
                                         cardText={cardProp.cardText}
                                         cardAlt={cardProp.cardAlt}
+                                        buttonColor={cardProp.buttonColor}
                                     />
                                 ))}
             </Container>
