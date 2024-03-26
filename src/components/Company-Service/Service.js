@@ -41,8 +41,8 @@ function Service () {
                             justifyItems: 'center',
                             alignItems: 'center',
                             padding: '10px',
-                            marginY: '10px',
-                            backgroundColor: 'blue',
+                            marginY: '50px',
+                            /* backgroundColor: 'blue', */
                             
                         }}>
                             {cardProps.map((cardProp) => (
