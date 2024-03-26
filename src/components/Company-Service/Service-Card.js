@@ -4,6 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+
 
 
 
@@ -12,7 +14,7 @@ function ServiceCard(props) {
     <Card
     sx={{
       
-      maxWidth: 345, 
+      maxWidth: 300, 
       borderRadius: 3,
       display: 'flex',
       flexDirection: 'column',
@@ -29,7 +31,7 @@ function ServiceCard(props) {
         image={props.cardImg}
         alt={props.cardAlt}
       />
-      <CardContent>
+      <CardContent sx={{ textAlign:'center'}}>
         <Typography 
           gutterBottom 
           variant="h5" 
@@ -46,13 +48,18 @@ function ServiceCard(props) {
         </Typography>
       </CardContent>
     </CardActionArea>
-    <CardActions>
+    <CardActions> {/* you can use margin top and width of 100% here */}
       <Button 
       variant='contained' 
       color="primary"
       fullWidth
+      endIcon={<ArrowRightAltIcon/>}
+      sx={{
+        letterSpacing: '.3rem',
+        fontSize: '.5rem'
+      }}
       >
-        Share
+        Learn more
       </Button>
     </CardActions>
   </Card>
