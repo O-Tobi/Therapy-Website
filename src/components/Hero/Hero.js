@@ -1,4 +1,3 @@
-import './Hero.css'; // Import your custom CSS file (optional)
 import { Typography, Button, Box, Grid } from '@mui/material';
 import Happy from './../../assets/happy_family.jpg'; // Assuming jpg format
 
@@ -64,6 +63,7 @@ function Hero() {
                             fontWeight: 'bold',
                             borderRadius: '25px',
                             textTransform: 'uppercase',
+                            
                         }}
                     >
                         view our services

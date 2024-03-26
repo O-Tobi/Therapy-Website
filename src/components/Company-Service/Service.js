@@ -1,4 +1,4 @@
-import { Container, Box, Typography } from "@mui/material";
+import { Container, Box} from "@mui/material";
 import AboutService from "./About-Service";
 import ServiceCard from "./Service-Card";
 import Happy from './../../assets/happy_family.jpg'
