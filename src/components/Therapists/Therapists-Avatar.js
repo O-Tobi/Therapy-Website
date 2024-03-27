@@ -6,7 +6,11 @@ function TherapistAvatar (props) {
             <Avatar
             alt={props.avatarAlt}
             src= {props.avatarImg}
-            sx={{ width: 200, height: 200 }}
+            sx={{
+                marginX: '40px', 
+                width: 150,
+                height: 150
+            }}
             />
         </Box>
     )
