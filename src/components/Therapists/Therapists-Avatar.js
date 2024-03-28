@@ -1,4 +1,4 @@
-import { Avatar, Box } from "@mui/material";
+import { Avatar, Box} from "@mui/material";
 
 function TherapistAvatar (props) {
     return (
@@ -7,11 +7,12 @@ function TherapistAvatar (props) {
             alt={props.avatarAlt}
             src= {props.avatarImg}
             sx={{
-                marginX: '40px', 
-                width: 150,
-                height: 150
+                marginX: {sm: '15px', md:'30px', lg:'40px'}, 
+                width: {sm:'90px',md: '100px', lg: '150px'},
+                height: {sm:'90px',md: '100px', lg: '150px'}
             }}
             />
+
         </Box>
     )
 };
