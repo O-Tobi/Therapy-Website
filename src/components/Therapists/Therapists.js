@@ -31,47 +31,47 @@ function Therapists() {
             avatarImg: `${Happy}`,
         }
     ]
-    
+
     return (
         <Container>
-            <TherapistIntro/>
+            <TherapistIntro />
 
             <Box
-            sx={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                flexWrap: 'wrap',
-                marginY: {xs: '20px', sm: '30px',md:'50px', lg:'50px',},
-                
-            }}>
-                {avatarProps.map((avatarProp) =>(
-                    <TherapistAvatar 
-                    key ={avatarProp.id}
-                    avatarAlt= {avatarProp.avatarAlt}
-                    avatarImg = {avatarProp.avatarImg}
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    flexWrap: 'wrap',
+                    marginY: { xs: '20px', sm: '30px', md: '50px', lg: '50px', },
+
+                }}>
+                {avatarProps.map((avatarProp) => (
+                    <TherapistAvatar
+                        key={avatarProp.id}
+                        avatarAlt={avatarProp.avatarAlt}
+                        avatarImg={avatarProp.avatarImg}
                     />
                 ))}
             </Box>
-            <Box 
-            sx={{
-                display:'flex',
-                justifyContent: 'center'
-
-            }}>
-            <Button variant="contained"
+            <Box
                 sx={{
-                    fontSize: {xs:'.5rem',sm: '.5rem', md: '1rem', lg: '1rem' },
-                    color: 'white',
-                    px: '1.5rem',
-                    fontWeight: 'bold',
-                    borderRadius: '25px',
-                    textTransform: 'uppercase',
-                    
+                    display: 'flex',
+                    justifyContent: 'center'
+
                 }}>
+                <Button variant="contained"
+                    sx={{
+                        fontSize: { xs: '.5rem', sm: '.5rem', md: '1rem', lg: '1rem' },
+                        color: 'white',
+                        px: '1.5rem',
+                        fontWeight: 'bold',
+                        borderRadius: '25px',
+                        textTransform: 'uppercase',
+
+                    }}>
                     Get to Know us
-            </Button>
+                </Button>
             </Box>
-            
+
         </Container>
     );
 }
