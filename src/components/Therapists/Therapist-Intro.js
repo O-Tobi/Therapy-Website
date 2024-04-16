@@ -24,7 +24,10 @@ function TherapistIntro () {
                 paddingRight: {md: '60px', lg:'60px'},
                 paddingTop: {md: '10px', lg:'10px'}
             }}>
-              Finding the right fit in a therapist is essential to the therapeutic process. Our therapists are trained in: Play Therapy, Equine-Facilitated Psychotherapy, Cognitive Behavioural Therapy, Ecosystemic Structural Family Therapy, Yoga, Triple P Positive Parenting, Gottman Method Couples Therapy and much more!
+              Finding the right fit in a therapist is essential to the therapeutic process. 
+              Our therapists are trained in: Play Therapy, Equine-Facilitated Psychotherapy, 
+              Cognitive Behavioural Therapy, Ecosystemic Structural Family Therapy, Yoga, 
+              Triple P Positive Parenting, Gottman Method Couples Therapy and much more!
             </Typography>
           </Grid>
         </Grid>

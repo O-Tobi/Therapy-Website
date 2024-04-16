@@ -23,9 +23,6 @@ function Guide () {
  
         }}>
 
-        
-
-
           <Grid
           item
           xs={12}
@@ -50,12 +47,32 @@ function Guide () {
 
         <Box
         sx={{
-          backgroundColor: 'red',
+          backgroundColor: 'yellow',
           width: '80%',
           height: '40%',
-          margin: '-100px'
+          margin: '-100px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexDirection: 'column',
+          
         }}>
-          <Typography variant="h1"> This is the overlay</Typography>
+          <Box
+          sx = {{
+            backgroundColor: 'red',
+            height: '90%',
+            width: '95%',
+            
+          }}>
+            <Box>
+              <Grid>
+                
+              </Grid>
+              
+            </Box>
+
+          </Box>
+          
         </Box>
 
       </Box> 
