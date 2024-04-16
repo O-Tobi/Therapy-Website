@@ -62,15 +62,86 @@ function Guide () {
             backgroundColor: 'red',
             height: '90%',
             width: '95%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '10px'
             
           }}>
-            <Box>
-              <Grid>
-                
-              </Grid>
-              
+            <Box
+            sx={{
+              backgroundColor: 'blue',
+              height: '100%',
+              width: '25%',
+              padding: '10px',
+            }}>
+              <Box sx={{ height: '100%', width: '100%', alignContent : 'center', backgroundColor: 'green' }}>
+                <Box
+                sx={{
+                  height: '35%',
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'baseline',
+                  justifyContent: 'left',
+                  backgroundColor: 'purple'
+                }}>
+                  <Typography variant='h1'>01</Typography>
+                  <Typography variant='h3'>Guide</Typography>
+                </Box>
+                <Typography variant='body1'>This is a test and i want it to occupy 100% of the card below the two about occupying 5% of the width each0</Typography>
+              </Box>
             </Box>
 
+            <Box
+            sx={{
+              backgroundColor: 'blue',
+              height: '100%',
+              width: '25%',
+              padding: '10px',
+            }}>
+              <Box sx={{ height: '100%', width: '100%', alignContent : 'center', backgroundColor: 'green' }}>
+                <Box
+                sx={{
+                  height: '35%',
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'baseline',
+                  justifyContent: 'left',
+                  backgroundColor: 'purple'
+                }}>
+                  <Typography variant='h1'>01</Typography>
+                  <Typography variant='h3'>Guide</Typography>
+                </Box>
+                <Typography variant='body1'>This is a test and i want it to occupy 100% of the card below the two about occupying 5% of the width each0</Typography>
+              </Box>
+            </Box>
+
+            <Box
+            sx={{
+              backgroundColor: 'blue',
+              height: '100%',
+              width: '25%',
+              padding: '10px',
+              
+            }}>
+              <Box sx={{ height: '100%', width: '100%', alignContent : 'center', backgroundColor: 'green' }}>
+                <Box
+                sx={{
+                  height: '35%',
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'baseline',
+                  justifyContent: 'left',
+                  backgroundColor: 'purple'
+                }}>
+                  <Typography variant='h1'>01</Typography>
+                  <Typography variant='h3'>Guide</Typography>
+                </Box>
+                <Typography variant='body1'>This is a test and i want it to occupy 100% of the card below the two about occupying 5% of the width each0</Typography>
+              </Box>
+            </Box>
+
+            
           </Box>
           
         </Box>
