@@ -1,7 +1,17 @@
 import {Box, Typography,Grid} from '@mui/material'
 import Happy from './../../assets/happy_family.jpg'
+import GuideSteps from './GuideSteps';
 
 function Guide () {
+  const guide = [
+    {
+      id: 'number',
+      number: '01',
+      step: 'This is the first step',
+      stepDetails: "We care about you and your ability to thrive! We're a proud believer in positive psycholo"
+    }
+  ]
+
     return (
       <Box 
       sx={{
@@ -44,108 +54,9 @@ function Guide () {
             <Typography variant="h3" component="h1" gutterBottom sx={{ fontSize: {xs:'1.5rem',sm: '1.5rem', md: '3rem', lg: '3rem' }, textTransform: 'capitalize'}}>3 easy steps to a joyful life</Typography>
           </Grid>
         </Box>
-
-        <Box
-        sx={{
-          backgroundColor: 'yellow',
-          width: '80%',
-          height: '40%',
-          margin: '-100px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          
-        }}>
-          <Box
-          sx = {{
-            backgroundColor: 'red',
-            height: '90%',
-            width: '95%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '10px'
-            
-          }}>
-            <Box
-            sx={{
-              backgroundColor: 'blue',
-              height: '100%',
-              width: '25%',
-              padding: '10px',
-            }}>
-              <Box sx={{ height: '100%', width: '100%', alignContent : 'center', backgroundColor: 'green' }}>
-                <Box
-                sx={{
-                  height: '35%',
-                  width: '100%',
-                  display: 'flex',
-                  alignItems: 'baseline',
-                  justifyContent: 'left',
-                  backgroundColor: 'purple'
-                }}>
-                  <Typography variant='h1'>01</Typography>
-                  <Typography variant='h3'>Guide</Typography>
-                </Box>
-                <Typography variant='body1'>This is a test and i want it to occupy 100% of the card below the two about occupying 5% of the width each0</Typography>
-              </Box>
-            </Box>
-
-            <Box
-            sx={{
-              backgroundColor: 'blue',
-              height: '100%',
-              width: '25%',
-              padding: '10px',
-            }}>
-              <Box sx={{ height: '100%', width: '100%', alignContent : 'center', backgroundColor: 'green' }}>
-                <Box
-                sx={{
-                  height: '35%',
-                  width: '100%',
-                  display: 'flex',
-                  alignItems: 'baseline',
-                  justifyContent: 'left',
-                  backgroundColor: 'purple'
-                }}>
-                  <Typography variant='h1'>01</Typography>
-                  <Typography variant='h3'>Guide</Typography>
-                </Box>
-                <Typography variant='body1'>This is a test and i want it to occupy 100% of the card below the two about occupying 5% of the width each0</Typography>
-              </Box>
-            </Box>
-
-            <Box
-            sx={{
-              backgroundColor: 'blue',
-              height: '100%',
-              width: '25%',
-              padding: '10px',
-              
-            }}>
-              <Box sx={{ height: '100%', width: '100%', alignContent : 'center', backgroundColor: 'green' }}>
-                <Box
-                sx={{
-                  height: '35%',
-                  width: '100%',
-                  display: 'flex',
-                  alignItems: 'baseline',
-                  justifyContent: 'left',
-                  backgroundColor: 'purple'
-                }}>
-                  <Typography variant='h1'>01</Typography>
-                  <Typography variant='h3'>Guide</Typography>
-                </Box>
-                <Typography variant='body1'>This is a test and i want it to occupy 100% of the card below the two about occupying 5% of the width each0</Typography>
-              </Box>
-            </Box>
-
-            
-          </Box>
-          
-        </Box>
-
+        
+        
+        <GuideSteps />
       </Box> 
     )
 };
