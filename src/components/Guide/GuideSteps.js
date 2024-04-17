@@ -2,62 +2,65 @@ import { Box, Typography } from "@mui/material";
 
 
 /* this is the overlay */
-function GuideSteps ({number, step, stepDetails}) {
+function GuideSteps({ number, step, stepDetails }) {
     return (
         <Box
-        sx={{
-          backgroundColor: 'yellow',
-          width: '80%',
-          height: '40%',
-          margin: '-100px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          
-        }}>
-          <Box
-          sx = {{
-            backgroundColor: 'red',
-            height: '90%',
-            width: '95%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '10px'
-            
-          }}>
-
-            <Box
             sx={{
-              backgroundColor: 'blue',
-              height: '100%',
-              width: '25%',
-              padding: '10px',
-            }}>
-              <Box sx={{ height: '100%', width: '100%', alignContent : 'center', backgroundColor: 'green' }}>
-                <Box
-                sx={{
-                  height: '30%',
-                  width: '100%',
-                  display: 'flex',
-                  alignItems: 'baseline',
-                  justifyContent: 'left',
-                  backgroundColor: 'purple',
-                  marginY: '20px',
-                }}>
-                  <Typography variant='h1'>{number}</Typography>
-                  <Typography variant='h3'>{step}</Typography>
-                </Box>
-                <Typography variant='body1'>{stepDetails}</Typography>
-              </Box>
-            </Box>
- 
-          </Box>
-          
-        </Box>
+                backgroundColor: 'blue',
+                height: '70%',
+                width: '30%',
+                alignContent: 'center',
+                marginX: '25px',
 
+            }}>
+            
+                <Box
+                    sx={{
+                        height: '30%',
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'left',
+                        backgroundColor: 'purple',
+                        
+                    }}>
+
+                    <Typography
+                        variant="h3"
+                        component="h1"
+                        gutterBottom
+                        sx={{
+                            fontSize: { xs: '1.5rem', sm: '1.5rem', md: '3rem', lg: '3rem' },
+                            marginX: "15px"
+                        }}>
+                        {number}
+                    </Typography>
+
+                    <Typography
+                        variant="subtitle1"
+                        gutterBottom
+                        sx={{
+                            fontSize: { xs: '.5rem', sm: '.5rem', md: '1rem', lg: '1rem' },
+                            textTransform: 'uppercase',
+                            letterSpacing: '.1rem',
+                            fontWeight: 'bold',
+                            paddingBottom: '10px'
+                        }}>
+                        {step}
+                    </Typography>
+
+
+                </Box>
+                <Typography 
+                variant='body1'>
+                    {stepDetails}
+                </Typography>
+            
+        </Box>
     )
 };
 
 export default GuideSteps;
+
+
+
