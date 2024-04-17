@@ -7,20 +7,17 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 function Guide() {
   const guides = [
     {
-      id: 'number',
       number: '01',
       step: 'finding a therapist match',
       stepDetails: "Contact us to schedule your first appointment. We'll work with you to match you with a therapist who fits your individual needs."
     },
     {
-      id: 'number',
       number: '02',
       step: 'scheduling your appointment',
       stepDetails: "You'll receive a welcome email with further instructions on booking with us & completing your intake documentation electronically."
     },
 
     {
-      id: 'number',
       number: '03',
       step: 'begin your journey!',
       stepDetails: "You'll meet with your therapist either in-person or virtually & you've now taken a step towards a joyful stress-free life as it shoud be!"
@@ -85,6 +82,7 @@ function Guide() {
           flexDirection: 'column',
 
         }}>
+          
         <Box
           sx={{
             backgroundColor: 'red',
@@ -93,7 +91,7 @@ function Guide() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '10px'
+            gap: '10px',
 
           }}>
 
@@ -107,11 +105,12 @@ function Guide() {
 
         </Box>
 
-
+        {/* Button below GuideSteps */}
         <Box
           sx={{
             display: 'flex',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            marginBottom: '50px',
 
           }}>
           <Button variant="contained"

@@ -7,9 +7,9 @@ function GuideSteps({ number, step, stepDetails }) {
         <Box
             sx={{
                 backgroundColor: 'blue',
-                height: '70%',
+                height: '60%',
                 width: '30%',
-                alignContent: 'center',
+                alignItems: 'left',
                 marginX: '25px',
 
             }}>
@@ -51,8 +51,7 @@ function GuideSteps({ number, step, stepDetails }) {
 
 
                 </Box>
-                <Typography 
-                variant='body1'>
+                <Typography variant='body1'>
                     {stepDetails}
                 </Typography>
             
