@@ -73,65 +73,55 @@ function Guide() {
       <Box
         sx={{
           backgroundColor: 'yellow',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
           width: '80%',
-          height: '50%',
+          /* 
+          height: '50%', */
           margin: '-100px',
-          display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyItems: 'center',
           flexDirection: 'column',
+          py: '3%'
 
         }}>
-          
-        <Box
-          sx={{
-            backgroundColor: 'red',
-            height: '90%',
-            width: '95%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '10px',
 
-          }}>
 
-          {guides.map((guide) => (
-            <GuideSteps
-              key={guide.number}
-              number={guide.number}
-              step={guide.step}
-              stepDetails={guide.stepDetails} />
-          ))}
+        {guides.map((guide) => (
+          <GuideSteps
+            key={guide.number}
+            number={guide.number}
+            step={guide.step}
+            stepDetails={guide.stepDetails} />
+        ))}
 
-        </Box>
 
-        {/* Button below GuideSteps */}
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginBottom: '50px',
-
-          }}>
-          <Button variant="contained"
-            endIcon={<ArrowRightAltIcon />}
-            sx={{
-              fontSize: { xs: '.5rem', sm: '.5rem', md: '1rem', lg: '1rem' },
-              color: 'white',
-              px: '1.5rem',
-              borderRadius: '25px',
-              textTransform: 'uppercase',
-              letterSpacing: '.3rem',
-              paddingX: '40px',
-              paddingY: '10px'
-
-            }}>
-            Get to Know us
-          </Button>
-        </Box>
       </Box>
 
+      {/* Button below GuideSteps */}
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '50px',
 
+        }}>
+        <Button variant="contained"
+          endIcon={<ArrowRightAltIcon />}
+          sx={{
+            fontSize: { xs: '.5rem', sm: '.5rem', md: '1rem', lg: '1rem' },
+            color: 'white',
+            px: '1.5rem',
+            borderRadius: '25px',
+            textTransform: 'uppercase',
+            letterSpacing: '.3rem',
+            paddingX: '40px',
+            paddingY: '10px',
+
+          }}>
+          Get to Know us
+        </Button>
+      </Box>
 
     </Box>
   )

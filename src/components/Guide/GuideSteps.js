@@ -7,10 +7,11 @@ function GuideSteps({ number, step, stepDetails }) {
         <Box
             sx={{
                 backgroundColor: 'blue',
-                height: '60%',
-                width: '30%',
+                height: 200,
+                maxWidth: 300,
                 alignItems: 'left',
-                marginX: '25px',
+                marginX: '20px',
+                marginBottom: '70px'
 
             }}>
             
