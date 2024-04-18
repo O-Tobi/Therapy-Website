@@ -52,7 +52,7 @@ function GuideSteps({ number, step, stepDetails }) {
 
 
                 </Box>
-                <Typography variant='body1'>
+                <Typography variant='body1' color='text.secondary'>
                     {stepDetails}
                 </Typography>
             

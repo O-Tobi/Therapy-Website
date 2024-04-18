@@ -31,8 +31,10 @@ function Guide() {
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        height: '800px',
+        height: {xs: '1000px', sm: '600px', md:'800px', lg: '800px'},
         marginY: '35px',
+        backgroundColor: {xs: 'brown', sm: 'blue', md:'red', lg: 'orange'}
+        
 
       }}>
       <Box
@@ -53,13 +55,16 @@ function Guide() {
           md={4} // Adjust width for larger screens
           lg={4} // Further adjust width for even larger screens
           sx={{
-            textAlign: { xs: 'center', sm: 'center', md: 'left', lg: 'left' },
+            textAlign: { xs: 'center', sm: 'left', md: 'left', lg: 'left' },
             mx: { md: '20px', lg: '20px' },
-            marginTop: '80px',
-            px: { md: '60px', lg: '60px' },
+            marginTop: {xs: '30px', sm:'60px', md: '80px', lg: '80px' },
+            px: {xs:'10px', sm:'60px', md: '60px', lg: '60px' },
             color: 'white',
             position: 'relative',
-            py: 2, // Add padding to the content
+            py: {xs:'10px', sm:'40px', md: '50px', lg: '60px' }, // Add padding to the content
+            /* display: 'flex',
+            flexDirection:'column', */
+            
 
           }}
         >
@@ -76,13 +81,13 @@ function Guide() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
           width: '80%',
-          /* 
-          height: '50%', */
-          margin: '-100px',
+          /* height: '50%', */
+          margin: {xs: '-50px', sm: '-70px', md:'-80px', lg: '-80px'},
           alignItems: 'center',
           justifyItems: 'center',
           flexDirection: 'column',
-          py: '3%'
+          py: '3%',
+          
 
         }}>
 
