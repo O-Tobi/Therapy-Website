@@ -1,4 +1,6 @@
 import { Container, Typography, Box } from "@mui/material";
+import HeroSm from "../Hero/Hero-SM";
+
 
 function AboutService() {
     return (
@@ -17,6 +19,7 @@ function AboutService() {
 
                 }}
             >
+                <HeroSm />
                 <Typography
                     variant="h1"
                     component="h1"
