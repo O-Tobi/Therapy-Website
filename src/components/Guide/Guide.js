@@ -80,7 +80,7 @@ function Guide() {
           backgroundColor: 'yellow',
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          width: '80%',
+          width:  '80%',
           /* height: '50%', */
           margin: {xs: '-50px', sm: '-70px', md:'-80px', lg: '-80px'},
           alignItems: 'center',
