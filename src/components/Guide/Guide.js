@@ -20,7 +20,7 @@ function Guide() {
     {
       number: '03',
       step: 'begin your journey!',
-      stepDetails: "You'll meet with your therapist either in-person or virtually & you've now taken a step towards a joyful stress-free life as it shoud be!"
+      stepDetails: "You'll meet with your therapist either in-person or virtually & you've now taken a step towards a joyful stress-free life!"
     },
 
   ]
@@ -32,7 +32,7 @@ function Guide() {
         alignItems: 'center',
         flexDirection: 'column',
         height: {xs: '1000px', sm: '600px', md:'800px', lg: '800px'},
-        marginY: '35px',
+        marginTop: '30px',
         
 
       }}>
