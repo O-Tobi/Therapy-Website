@@ -86,7 +86,7 @@ function Guide() {
           alignItems: 'center',
           justifyItems: 'center',
           flexDirection: 'column',
-          py: '3%',
+          py: '1%',
           
 
         }}>
@@ -108,7 +108,7 @@ function Guide() {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          marginBottom: '50px',
+          marginBottom: '30px',
 
         }}>
         <Button variant="contained"

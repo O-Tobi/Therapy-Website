@@ -11,7 +11,7 @@ function GuideSteps({ number, step, stepDetails }) {
                 maxWidth: 300,
                 alignItems: 'left',
                 marginX: '20px',
-                marginBottom: '70px'
+                marginBottom: {xs: '60px', sm: '80px', md:'100px', lg: '100px'}
 
             }}>
             
