@@ -11,6 +11,7 @@ function TherapistIntro () {
           </Grid>
       
         <Grid item xs={12} sm={12} md={1} lg={1}>
+          {/* this is the divider */}
             <Box
             sx={{
                 backgroundColor: '#FB6D48',

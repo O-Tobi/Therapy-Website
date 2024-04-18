@@ -33,7 +33,6 @@ function Guide() {
         flexDirection: 'column',
         height: {xs: '1000px', sm: '600px', md:'800px', lg: '800px'},
         marginY: '35px',
-        backgroundColor: {xs: 'brown', sm: 'blue', md:'red', lg: 'orange'}
         
 
       }}>
@@ -77,7 +76,7 @@ function Guide() {
       {/* rendering the overlay */}
       <Box
         sx={{
-          backgroundColor: 'yellow',
+          backgroundColor: 'white',
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
           width:  '80%',
@@ -87,6 +86,8 @@ function Guide() {
           justifyItems: 'center',
           flexDirection: 'column',
           py: '1%',
+          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.6)',
+
           
 
         }}>
@@ -114,14 +115,14 @@ function Guide() {
         <Button variant="contained"
           endIcon={<ArrowRightAltIcon />}
           sx={{
-            fontSize: { xs: '.5rem', sm: '.5rem', md: '1rem', lg: '1rem' },
+            fontSize: { xs: '.7rem', sm: '.7rem', md: '1rem', lg: '1rem' },
             color: 'white',
             px: '1.5rem',
             borderRadius: '25px',
             textTransform: 'uppercase',
-            letterSpacing: '.3rem',
-            paddingX: '40px',
-            paddingY: '10px',
+            letterSpacing: { xs: '.2rem', sm: '.3rem', md: '.4rem', lg: '.4rem' },
+            paddingX: { xs: '20px', sm: '20px', md: '25px', lg: '40px' },
+            paddingY: { xs: '8px', sm: '8px', md: '10px', lg: '10px' },
 
           }}>
           Get to Know us

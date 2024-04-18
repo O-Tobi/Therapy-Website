@@ -4,18 +4,17 @@ function GuideSteps({ number, step, stepDetails }) {
     return (
         <Box
             sx={{
-                backgroundColor: 'blue',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'left',
                 maxWidth: 300,
                 marginX: '20px',
-                marginBottom: { xs: '60px', sm: '80px', md: '100px', lg: '100px' }
+                marginBottom: { xs: '60px', sm: '80px', md: '100px', lg: '100px' },
+                height: { xs: '190px', sm: '250px', md: '250px', lg: '200px' }
             }}>
 
             <Box
                 sx={{
-                    backgroundColor: 'purple',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'left',
@@ -28,7 +27,8 @@ function GuideSteps({ number, step, stepDetails }) {
                     component="h1"
                     sx={{
                         fontSize: { xs: '2.5rem', sm: '2.5rem', md: '3rem', lg: '3rem' },
-                        marginRight: '15px'
+                        marginRight: '15px',
+                        color: '#008DDA'
                     }}>
                     {number}
                 </Typography>
@@ -54,6 +54,7 @@ function GuideSteps({ number, step, stepDetails }) {
                     fontSize: { xs: '.8rem', sm: '.9rem', md: '1rem', lg: '1rem' },
                     paddingX: '15px',
                     paddingBottom: '10px',
+                    fontWeight: 'bold',
                 }}>
                 {stepDetails}
             </Typography>
