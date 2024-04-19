@@ -25,10 +25,10 @@ function AboutService() {
                     component="h1"
                     sx={{
                         textAlign: 'center',
-                        fontWeight: '350',
+                        fontWeight: '400',
                         color: '#008DDA',
                         fontSize: { xs: '2.5rem', sm: '3rem', md: '5rem', lg: '5rem' },
-                        marginBottom: '10px'
+                        marginBottom: '10px',
                     }}
                 >
                     A safe therapeutic environment is important
@@ -40,7 +40,9 @@ function AboutService() {
                         letterSpacing: { xs: '.2rem', sm: '.5rem' },
                         fontWeight: 'bold',
                         textTransform: 'uppercase',
-                        marginBottom: '10px'
+                        marginBottom: {xs: '-30px', sm: '20px'},
+                        visibility: {xs: 'hidden', sm: 'visible'},
+                        /* height: {xs: '0px'} */
                     }}
                 >
                     As you make steps towards change
