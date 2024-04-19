@@ -7,11 +7,17 @@ function HeroSm () {
             <Grid
                     item
                     xs={12}
-                    sx={{ px: {sm: '0px', md: '0px', lg: '0px'}, 
+                    sx={{ 
+                        height: {sm:'0px'}, 
                     
                     visibility: {xs: 'visible', sm: 'hidden'} 
                     }}>
-                    <Typography variant="h1" component="h1" gutterBottom sx={{ fontSize: {xs:'38px', sm: '50px', md: '60px', lg: '70px' } }}>
+                    <Typography 
+                    variant="h1" 
+                    component="h1" 
+                    gutterBottom 
+                    sx={{ 
+                        fontSize: {xs:'38px', sm: '50px', md: '60px', lg: '70px' }, fontWeight: 'bold' }}>
                         Mental Health Therapy
                     </Typography>
 
@@ -24,14 +30,14 @@ function HeroSm () {
                     <Button
                         variant="contained"
                         sx={{
-                            fontSize: {xs:'11px',sm: '12px', md: '13px', lg: '14px' },
+                            fontSize: '11px',
                             color: 'white',
                             fontWeight: 'bold',
                             borderRadius: '25px',
                             textTransform: 'uppercase',
                             px: '2rem',
                             py: '.8rem',
-                            marginTop: {xs:'11px',sm: '12px', md: '15px', lg: '20px' },
+                            marginTop: '11px',
                             
                         }}
                     >

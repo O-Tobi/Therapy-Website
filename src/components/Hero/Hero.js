@@ -33,25 +33,31 @@ function Hero() {
             {/* Content */}
             <Grid
                 container
-                justifyContent={{xs: 'center', sm: 'flex-start', md: 'flex-start', lg: 'flex-start'}}
+                justifyContent={{ sm: 'flex-start', md: 'flex-start', lg: 'flex-start'}}
                 alignItems="center"
                 sx={{
                     zIndex: 2,
                     py: 2,
-                    textAlign: {xs: 'center', sm: 'left', md: 'left', lg: 'left'},
+                    textAlign: { sm: 'left', md: 'left', lg: 'left'},
                 }}
             >
                 <Grid
                     item
-                    xs={12}
                     sm={8}
                     md={8}
                     lg={6}
                     sx={{ px: {sm: '50px', md: '60px', lg: '60px'}, 
                     color: 'white',
-                    visibility: {xs: 'hidden', sm: 'visible'} 
+                    visibility: {xs: 'hidden', sm: 'visible'}  
                     }}>
-                    <Typography variant="h1" component="h1" gutterBottom sx={{ fontSize: {xs:'38px', sm: '50px', md: '60px', lg: '70px' } }}>
+                    <Typography 
+                    variant="h1" 
+                    component="h1" 
+                    gutterBottom 
+                    sx={{ 
+                        fontSize: {xs:'38px', sm: '50px', md: '60px', lg: '70px' }, 
+                        fontWeight: 'bold' 
+                        }}>
                         Mental Health Therapy
                     </Typography>
 
