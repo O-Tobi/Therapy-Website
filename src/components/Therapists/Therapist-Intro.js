@@ -5,7 +5,12 @@ function TherapistIntro () {
         
         <Grid container spacing={.5}>
           <Grid item xs={12} sm={12}  md={4} lg={4}>
-            <Typography variant="h3" sx={{ color: '#008DDA', paddingLeft: {md: '60px', lg:'120px'}, paddingTop: {md: '10px', lg:'10px'} }}>
+            <Typography 
+            variant="h3" 
+            sx={{ color: '#008DDA', 
+            paddingLeft: {md: '60px', lg:'120px'}, 
+            paddingTop: {md: '10px', lg:'10px'} 
+            }}>
               Meet The Therapists
             </Typography>
           </Grid>
