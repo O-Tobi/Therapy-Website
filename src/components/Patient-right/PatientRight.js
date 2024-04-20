@@ -4,7 +4,8 @@ function PatientRight () {
     return (
         <Container
         sx={{
-            marginTop: { xs: '30px', sm: '30px', md: '0px', lg: '0px' } 
+            marginTop: { xs: '30px', sm: '30px', md: '-30px', lg: '-40px' },
+            marginBottom: { xs: '30px', sm: '30px', md: '30px', lg: '30px' } 
         }}>
             <Typography 
             variant="subtitle1"

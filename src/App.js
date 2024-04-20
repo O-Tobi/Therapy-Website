@@ -7,6 +7,7 @@ import Service from './components/Company-Service/Service';
 import Therapists from './components/Therapists/Therapists';
 import Guide from './components/Guide/Guide';
 import PatientRight from './components/Patient-right/PatientRight';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Therapists />
       <Guide />
       <PatientRight />
+      <Footer />
     </div>
   );
 }

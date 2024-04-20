@@ -9,10 +9,10 @@ function TherapistIntro () {
             variant="h3" 
             sx={{ 
               color: '#008DDA', 
-              paddingLeft: {md: '60px', lg:'120px'}, 
-              paddingTop: {md: '10px', lg:'10px'},
-              fontSize : {xs: '35px'}, 
-              textAlign: {xs: 'center'},
+              paddingLeft: {md: '100px'}, 
+              paddingTop: {md: '30px', lg:'10px'},
+              fontSize : {xs: '35px', lg: '50px'}, 
+              textAlign: {xs: 'center', lg: 'left', md: 'left'},
               marginBottom: {xs: '20px',}
             }}>
               Meet The Therapists
@@ -33,6 +33,7 @@ function TherapistIntro () {
       
           <Grid item xs={12} sm={12}  md={7} lg={7}>
             <Typography sx={{
+                marginLeft: {md: '-30px'},
                 paddingRight: {md: '60px', lg:'60px'},
                 paddingTop: {md: '10px', lg:'10px'},
                 px: {xs: '20px', sm: '20px'}

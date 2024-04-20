@@ -42,7 +42,6 @@ function AboutService() {
                         textTransform: 'uppercase',
                         marginBottom: {xs: '-30px', sm: '20px'},
                         visibility: {xs: 'hidden', sm: 'visible'},
-                        /* height: {xs: '0px'} */
                     }}
                 >
                     As you make steps towards change
