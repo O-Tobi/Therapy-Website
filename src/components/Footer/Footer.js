@@ -1,7 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Container, Grid } from "@mui/material";
+import FooterCard from './FooterCard';
+import wellnessImg from './../../assets/wellness2.jpg'
 
 function Footer() {
+    const footerCardProps =[
+        {   
+            id: '1',
+            footerImg : `${wellnessImg}`,
+            footerAlt: "test Alt"
+        },
+        {   
+            id: '2',
+            footerImg : `${wellnessImg}`,
+            footerAlt: "test Alt"
+        },
+        {   
+            id: '3',
+            footerImg : `${wellnessImg}`,
+            footerAlt: "test Alt"
+        },
+        {   
+            id: '4',
+            footerImg : `${wellnessImg}`,
+            footerAlt: "test Alt"
+        },
+        {   
+            id: '5',
+            footerImg : `${wellnessImg}`,
+            footerAlt: "test Alt"
+        },
+        {   
+            id: '6',
+            footerImg : `${wellnessImg}`,
+            footerAlt: "test Alt"
+        },
+        
+    ]
+
     const [quote, setQuote] = useState('');
 
     // Sample array of quotes related to mental health therapy
@@ -30,25 +66,37 @@ function Footer() {
     return (
         <Box
             sx={{
-                backgroundColor: '#008DDA',
                 paddingTop: '30px',
                 paddingBottom: '30px',
-                color: '#fff'
             }}
         >
             <Container>
-                <Grid container spacing={4}>
-                    <Grid item xs={12} sm={6}>
+                <Grid container>
+                    <Grid item xs={12} sm={4} md={6}>
                         <Typography variant="h6" sx={{ marginBottom: '15px' }}>Connect With Us</Typography>
                         <Typography sx={{ marginBottom: '10px' }}>6849 Fairview Road Suite 702 Charlotte, NC 28210</Typography>
                         <Typography sx={{ marginBottom: '10px' }}>725 Jackson Rd Salisbury, NC 28146 </Typography>
                         <Typography>1913 J N Pease Place Ste 101 Charlotte, NC 28262 </Typography>
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
+
                         <Typography variant="h6" sx={{ marginBottom: '15px' }}>Contact Us</Typography>
                         <Typography sx={{ marginBottom: '10px' }}>info@jenkinscreativecounselingcenter.com</Typography>
                         <Typography>Call Us: 980-308-4500 Fax: 980-458-6037  </Typography>
                     </Grid>
+
+                    <Grid item xs={12} sm={8} md={6} spacing={0}> 
+                        <Grid container spacing={2}>
+                            {footerCardProps.map((footerCardProp) => (
+                                <Grid item key={footerCardProp.id} xs={6} sm={4}>
+                                    <FooterCard
+                                        footerImg={footerCardProp.footerImg}
+                                        footerAlt={footerCardProp.footerAlt}
+                                    />
+                                </Grid>
+                            ))}
+                        </Grid>
+                    </Grid>
+
+                    
                     <Grid item xs={12}>
                         <Typography variant="body1" sx={{ marginTop: '15px', textAlign: 'center' }}>"{quote}"</Typography>
                     </Grid>
