@@ -34,7 +34,7 @@ function Footer() {
             id: '6',
             footerImg : `${wellnessImg}`,
             footerAlt: "test Alt"
-        },
+        }, 
         
     ]
 
@@ -90,6 +90,7 @@ function Footer() {
                                     <FooterCard
                                         footerImg={footerCardProp.footerImg}
                                         footerAlt={footerCardProp.footerAlt}
+                                        
                                     />
                                 </Grid>
                             ))}

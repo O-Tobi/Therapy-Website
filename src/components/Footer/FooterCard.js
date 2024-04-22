@@ -7,6 +7,8 @@ function FooterCard (props) {
         backgroundImage : `url(${props.footerImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        position: 'relative',
         height:{xs: '170px', sm: '150px', md: '190px', lg: '220px'},
         width:{xs: '170px', sm: '150px', md: '190px', lg: '220px'},
         
