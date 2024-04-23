@@ -4,38 +4,38 @@ import FooterCard from './FooterCard';
 import wellnessImg from './../../assets/wellness2.jpg'
 
 function Footer() {
-    const footerCardProps =[
-        {   
+    const footerCardProps = [
+        {
             id: '1',
-            footerImg : `${wellnessImg}`,
+            footerImg: `${wellnessImg}`,
             footerAlt: "test Alt"
         },
-        {   
+        {
             id: '2',
-            footerImg : `${wellnessImg}`,
+            footerImg: `${wellnessImg}`,
             footerAlt: "test Alt"
         },
-        {   
+        {
             id: '3',
-            footerImg : `${wellnessImg}`,
+            footerImg: `${wellnessImg}`,
             footerAlt: "test Alt"
         },
-        {   
+        {
             id: '4',
-            footerImg : `${wellnessImg}`,
+            footerImg: `${wellnessImg}`,
             footerAlt: "test Alt"
         },
-        {   
+        {
             id: '5',
-            footerImg : `${wellnessImg}`,
+            footerImg: `${wellnessImg}`,
             footerAlt: "test Alt"
         },
-        {   
+        {
             id: '6',
-            footerImg : `${wellnessImg}`,
+            footerImg: `${wellnessImg}`,
             footerAlt: "test Alt"
-        }, 
-        
+        },
+
     ]
 
     const [quote, setQuote] = useState('');
@@ -71,7 +71,7 @@ function Footer() {
             }}
         >
             <Container>
-                <Grid container spacing = {2}>
+                <Grid container spacing={2}>
                     <Grid item xs={12} sm={4} md={4} >
                         <Typography variant="h6" sx={{ marginBottom: '15px' }}>Connect With Us</Typography>
                         <Typography sx={{ marginBottom: '10px' }}>6849 Fairview Road Suite 702 Charlotte, NC 28210</Typography>
@@ -83,21 +83,21 @@ function Footer() {
                         <Typography>Call Us: 980-308-4500 Fax: 980-458-6037  </Typography>
                     </Grid>
 
-                    <Grid item xs={12} sm={8} md={8}> 
-                        <Grid container sx={{ "& .MuiGrid-item": { flex: "none" }, marginLeft: {xs:'0px',md:'50px', lg: '85px'} }} /* override MUI default grid dimension */>
-                            {footerCardProps.map((footerCardProp) => (
-                                <Grid item key={footerCardProp.id} xs={6} sm={4} sx={{display: {xs: 'none', sm: 'block'}}}>
+                    <Grid item xs={12} sm={8} md={8}>
+                        <Grid container sx={{ "& .MuiGrid-item": { flex: "none" }, marginLeft: { xs: '5px', md: '50px', lg: '85px' } }}>
+                            {footerCardProps.map((footerCardProp, index) => (
+                                <Grid item key={footerCardProp.id} xs={6} sm={4} sx={{ display: { xs: index < 4 ? 'block' : 'none', sm: 'block' } }}> {/* display only 4 image cards on xs */}
                                     <FooterCard
                                         footerImg={footerCardProp.footerImg}
                                         footerAlt={footerCardProp.footerAlt}
-                                        
                                     />
                                 </Grid>
                             ))}
                         </Grid>
                     </Grid>
 
-                    
+
+
                     <Grid item xs={12}>
                         <Typography variant="body1" sx={{ marginTop: '15px', textAlign: 'center' }}>"{quote}"</Typography>
                     </Grid>
