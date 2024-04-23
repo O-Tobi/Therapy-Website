@@ -27,7 +27,7 @@ function AboutService() {
                         textAlign: 'center',
                         fontWeight: '400',
                         color: '#008DDA',
-                        fontSize: { xs: '2.5rem', sm: '3rem', md: '5rem', lg: '5rem' },
+                        fontSize: { xs: '2rem', sm: '3rem', md: '5rem', lg: '5rem' },
                         marginBottom: '10px',
                     }}
                 >
@@ -40,8 +40,8 @@ function AboutService() {
                         letterSpacing: { xs: '.2rem', sm: '.5rem' },
                         fontWeight: 'bold',
                         textTransform: 'uppercase',
-                        marginBottom: {xs: '-30px', sm: '20px'},
-                        visibility: {xs: 'hidden', sm: 'visible'},
+                        marginBottom: '20px',
+                        display: {xs: 'none', sm: 'block'},
                     }}
                 >
                     As you make steps towards change
