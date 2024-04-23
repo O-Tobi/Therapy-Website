@@ -73,8 +73,8 @@ function Footer() {
             <Container>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={4} md={4} sx={{ order: { xs: 2, sm: 1 } }}>
-                        <Typography variant="h6" sx={{ marginBottom: '15px', fontSize: {xs: '26px', sm: '28px', md: '34px' ,lg: '36px'}, color: '#008DDA'}}>Connect With Us </Typography>
-                        <Typography sx={{ whiteSpace: 'pre-line', fontSize: {xs: '13px', sm: '10px', md: '14px' ,lg: '14px'},  }}>
+                        <Typography variant="h6" sx={{ marginBottom: '15px', fontSize: {xs: '26px', sm: '28px', md: '30px' ,lg: '36px'}, color: '#008DDA'}}>Connect With Us </Typography>
+                        <Typography sx={{ whiteSpace: 'pre-line', fontSize: {xs: '13px', sm: '10px', md: '13px' ,lg: '14px'},  }}>
                             6849 Fairview Road Suite 702 Charlotte, NC 28210<br />
                             <br />
                             725 Jackson Rd Salisbury, NC 28146 <br />
@@ -84,7 +84,7 @@ function Footer() {
 
 
                         <Typography variant="h6" sx={{ marginTop: '25px', marginBottom: '10px', color: '#008DDA' }}>Contact Us</Typography>
-                        <Typography sx={{ whiteSpace: 'pre-line', fontSize: {xs: '13px', sm: '10px', md: '14px' ,lg: '14px'} }}>
+                        <Typography sx={{ whiteSpace: 'pre-line', fontSize: {xs: '13px', sm: '10px', md: '13px' ,lg: '14px'} }}>
                             info@jenkinscreativecounselingcenter.com<br />
                             <br />
                             Call Us: 980-308-4500 <br />
@@ -109,13 +109,13 @@ function Footer() {
 
 
 
-                    {/* <Grid item xs={12}>
-                        <Typography variant="body1" sx={{ marginTop: '15px', textAlign: 'center' }}>"{quote}"</Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography variant="caption" sx={{ textAlign: 'center' }}>© 2024 Jenkins Creative Counseling Center. All rights reserved.</Typography>
-                    </Grid> */}
+                    {/*  */}
                 </Grid>
+
+                    <Box sx={{ marginTop: '40px', textAlign: 'center' }}>
+                        <Typography variant="body1">"{quote}"</Typography>
+                        <Typography variant="caption">© 2024 Jenkins Creative Counseling Center. All rights reserved.</Typography>
+                    </Box>
             </Container>
         </Box>
     );
