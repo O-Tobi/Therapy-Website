@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import { Box, Typography, Container, Grid } from "@mui/material";
 import FooterCard from './FooterCard';
 import wellnessImg from './../../assets/wellness2.jpg'
@@ -63,6 +63,8 @@ function Footer() {
         setQuote(getRandomQuote());
     }, []);
 
+    /* seperate the quote into a different Component */
+
     return (
         <Box
             sx={{
@@ -107,9 +109,6 @@ function Footer() {
                         </Grid>
                     </Grid>
 
-
-
-                    {/*  */}
                 </Grid>
 
                     <Box sx={{ marginTop: '40px', textAlign: 'center' }}>
