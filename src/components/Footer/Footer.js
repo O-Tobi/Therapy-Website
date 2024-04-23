@@ -95,7 +95,7 @@ function Footer() {
                     </Grid>
 
                     <Grid item xs={12} sm={8} md={8} sx={{ order: { xs: 1, sm: 2 } }}>
-                        <Grid container sx={{ "& .MuiGrid-item": { flex: "none" }, marginLeft: { xs: '5px', md: '50px', lg: '85px' } }}>
+                        <Grid container sx={{ "& .MuiGrid-item": { flex: "none" }, marginLeft: { xs: '0px', md: '50px', lg: '85px' }, justifyContent: 'center'}}>
                             {footerCardProps.map((footerCardProp, index) => (
                                 <Grid item key={footerCardProp.id} xs={6} sm={4} sx={{ display: { xs: index < 4 ? 'block' : 'none', sm: 'block' } }}> {/* display only 4 image cards on xs */}
                                     <FooterCard
