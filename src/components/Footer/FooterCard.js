@@ -13,8 +13,8 @@ function FooterCard (props) {
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 position: 'relative',
-                height:{xs: '170px', sm: '150px', md: '190px', lg: '220px'},
-                width:{xs: '170px', sm: '150px', md: '190px', lg: '220px'},
+                height:{xs: '140px', sm: '150px', md: '190px', lg: '220px'},
+                width:{xs: '140px', sm: '150px', md: '190px', lg: '220px'},
                 
             }} /> 
         </Box>

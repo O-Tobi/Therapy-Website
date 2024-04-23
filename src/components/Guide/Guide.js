@@ -61,8 +61,7 @@ function Guide() {
             color: 'white',
             position: 'relative',
             py: {xs:'10px', sm:'40px', md: '50px', lg: '60px' }, // Add padding to the content
-            /* display: 'flex',
-            flexDirection:'column', */
+            
             
 
           }}

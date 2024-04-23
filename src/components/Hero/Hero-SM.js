@@ -2,9 +2,8 @@ import { Box, Grid, Typography, Button } from "@mui/material";
 
 function HeroSm() {
     return (
-        <Box sx={{ 
-            height: {sm:'0px'}, 
-            visibility: {xs: 'visible', sm: 'hidden'},
+        <Box sx={{  
+            display: {xs: 'block', sm: 'none'},
             px: '20px',
             paddingBottom: '50px'
         }}>
