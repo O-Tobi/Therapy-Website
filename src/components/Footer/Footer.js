@@ -71,8 +71,8 @@ function Footer() {
             }}
         >
             <Container>
-                <Grid container>
-                    <Grid item xs={12} sm={4} md={4}>
+                <Grid container spacing = {2}>
+                    <Grid item xs={12} sm={4} md={4} >
                         <Typography variant="h6" sx={{ marginBottom: '15px' }}>Connect With Us</Typography>
                         <Typography sx={{ marginBottom: '10px' }}>6849 Fairview Road Suite 702 Charlotte, NC 28210</Typography>
                         <Typography sx={{ marginBottom: '10px' }}>725 Jackson Rd Salisbury, NC 28146 </Typography>
@@ -83,10 +83,10 @@ function Footer() {
                         <Typography>Call Us: 980-308-4500 Fax: 980-458-6037  </Typography>
                     </Grid>
 
-                    <Grid item xs={12} sm={8} md={8} /* spacing={2} */> 
-                        <Grid container sx={{ "& .MuiGrid-item": { flex: "none" }}}>
+                    <Grid item xs={12} sm={8} md={8}> 
+                        <Grid container sx={{ "& .MuiGrid-item": { flex: "none" }, marginLeft: {xs:'0px',md:'50px', lg: '85px'} }} /* override MUI default grid dimension */>
                             {footerCardProps.map((footerCardProp) => (
-                                <Grid item key={footerCardProp.id} xs={6} sm={4}>
+                                <Grid item key={footerCardProp.id} xs={6} sm={4} sx={{display: {xs: 'none', sm: 'block'}}}>
                                     <FooterCard
                                         footerImg={footerCardProp.footerImg}
                                         footerAlt={footerCardProp.footerAlt}
