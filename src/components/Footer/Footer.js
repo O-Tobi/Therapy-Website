@@ -72,15 +72,26 @@ function Footer() {
         >
             <Container>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} sm={4} md={4} >
-                        <Typography variant="h6" sx={{ marginBottom: '15px' }}>Connect With Us</Typography>
-                        <Typography sx={{ marginBottom: '10px' }}>6849 Fairview Road Suite 702 Charlotte, NC 28210</Typography>
-                        <Typography sx={{ marginBottom: '10px' }}>725 Jackson Rd Salisbury, NC 28146 </Typography>
-                        <Typography>1913 J N Pease Place Ste 101 Charlotte, NC 28262 </Typography>
+                    <Grid item xs={12} sm={4} md={4}>
+                        <Typography variant="h6" sx={{ marginBottom: '15px', fontSize: {xs: '26px', sm: '30px', md: '34px' ,lg: '36px'}, color: '#008DDA'}}>Connect With Us </Typography>
+                        <Typography sx={{ whiteSpace: 'pre-line', fontSize: {xs: '13px', sm: '12px', md: '14px' ,lg: '14px'},  }}>
+                            6849 Fairview Road Suite 702 Charlotte, NC 28210<br />
+                            <br />
+                            725 Jackson Rd Salisbury, NC 28146 <br />
+                            <br />
+                            1913 J N Pease Place Ste 101 Charlotte, NC 28262
+                        </Typography>
 
-                        <Typography variant="h6" sx={{ marginBottom: '15px' }}>Contact Us</Typography>
-                        <Typography sx={{ marginBottom: '10px' }}>info@jenkinscreativecounselingcenter.com</Typography>
-                        <Typography>Call Us: 980-308-4500 Fax: 980-458-6037  </Typography>
+
+                        <Typography variant="h6" sx={{ marginY: '10px', color: '#008DDA' }}>Contact Us</Typography>
+                        <Typography sx={{ whiteSpace: 'pre-line', fontSize: {xs: '13px', sm: '12px', md: '14px' ,lg: '14px'} }}>
+                            info@jenkinscreativecounselingcenter.com<br />
+                            <br />
+                            Call Us: 980-308-4500 <br />
+                            <br />
+                            Fax: 9 80-458-6037
+                        </Typography>
+    
                     </Grid>
 
                     <Grid item xs={12} sm={8} md={8}>
