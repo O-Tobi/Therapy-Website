@@ -11,7 +11,7 @@ function TherapistIntro () {
               color: '#008DDA', 
               paddingLeft: {md: '100px'}, 
               paddingTop: {md: '30px', lg:'10px'},
-              fontSize : {xs: '35px', lg: '50px'}, 
+              fontSize : {xs: '30px',sm: '35px', md: '40px', lg: '50px'}, 
               textAlign: {xs: 'center', lg: 'left', md: 'left'},
               marginBottom: {xs: '20px',}
             }}>

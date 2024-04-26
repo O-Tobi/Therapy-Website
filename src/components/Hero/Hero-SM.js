@@ -1,4 +1,5 @@
-import { Box, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
+import ButtonComponent from "../Button-component";
 
 function HeroSm() {
     return (
@@ -49,21 +50,12 @@ function HeroSm() {
                         We employ unique and fun new mental health-based therapies for an explorative approach towards healing.
                     </Typography>
 
-                    <Button
+                    <ButtonComponent
+                        buttonName="view our services"
                         variant="contained"
-                        sx={{
-                            fontSize: '11px',
-                            color: 'white',
-                            fontWeight: 'bold',
-                            borderRadius: '25px',
-                            textTransform: 'uppercase',
-                            px: '2rem',
-                            py: '.8rem',
-                            marginTop: '11px',
-                        }}
-                    >
-                        view our services
-                    </Button>
+                        buttonColor="white"
+                    />
+
                 </Grid>
             </Grid>
         </Box>
