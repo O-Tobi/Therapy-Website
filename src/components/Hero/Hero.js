@@ -1,5 +1,6 @@
-import { Typography, Button, Box, Grid } from '@mui/material';
-import Happy from './../../assets/happy_family.jpg'; // Assuming jpg format
+import { Typography, Box, Grid } from '@mui/material';
+import Happy from './../../assets/happy_family.jpg';
+import ButtonComponent from '../Button-component';
 
 function Hero() {
     return (
@@ -68,22 +69,12 @@ function Hero() {
 
                     <Typography variant="subtitle2" gutterBottom sx={{ fontSize: {xs:'13px',sm: '14px', md: '15px', lg: '16px'} }}>We employ unique and fun new mental health-based therapies for an explorative approach towards healing.</Typography>
 
-                    <Button
+                    <ButtonComponent
+                        buttonName="view our services"
                         variant="contained"
-                        sx={{
-                            fontSize: {xs:'11px',sm: '12px', md: '13px', lg: '14px' },
-                            color: 'white',
-                            fontWeight: 'bold',
-                            borderRadius: '25px',
-                            textTransform: 'uppercase',
-                            px: '2rem',
-                            py: '.8rem',
-                            marginTop: {xs:'11px',sm: '12px', md: '15px', lg: '20px' },
-                            
-                        }}
-                    >
-                        view our services
-                    </Button>
+                        buttonColor="white"
+                    />
+
                 </Grid>
                     
             </Grid>
