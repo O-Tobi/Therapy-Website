@@ -1,13 +1,13 @@
 import { Box } from "@mui/material";
 
-function About () {
+function Blog () {
     return (
      <Box sx={{
         paddingY: "100px"
      }}>
-        THIS IS THE ABOUT PAGE
+        THIS IS THE Blog PAGE
      </Box>
     )
 };
 
-export default About;
+export default Blog;
