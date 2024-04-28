@@ -61,7 +61,7 @@ function Header() {
                                 {pages.map((page) => (
                                     <MenuItem key={page} onClick={handleCloseNavMenu}>
                                         <Typography textAlign="center">
-                                            <NavLink to={`${page.toLowerCase()}`}>
+                                            <NavLink to= {page === 'Home' ? '/' : `/${page.toLowerCase()}`}/* {`${page.toLowerCase()}`} */>
                                                 {page}
                                             </NavLink>
                                         </Typography>
@@ -76,7 +76,7 @@ function Header() {
                                 <Button
                                     key={page}
                                     component={NavLink}
-                                    to={`${page.toLowerCase()}`}
+                                    to={page === 'Home' ? '/' : `/${page.toLowerCase()}`}/* {`${page.toLowerCase()}`} */
                                     onClick={handleCloseNavMenu}
                                     sx={{ my: 2, color: 'black', display: 'block' }}
                                 >

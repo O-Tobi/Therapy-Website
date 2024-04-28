@@ -14,7 +14,7 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<ServiceFullPage />} />
         <Route path="blog" element={<Blog />} />
@@ -24,5 +24,6 @@ function App() {
     </div>
   );
 }
+/* create a reuseable hero component thatn will work for about, blog and services */
 
 export default App;
