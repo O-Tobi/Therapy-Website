@@ -6,6 +6,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 
 import CallToAction from '../Call-to-action/CallToAction';
+import { NavLink, Outlet } from 'react-router-dom';
 
 const pages = ['Home', 'About', 'Services', 'Blog'];
 
@@ -59,7 +60,11 @@ function Header() {
                             >
                                 {pages.map((page) => (
                                     <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography textAlign="center">{page}</Typography>
+                                        <Typography textAlign="center">
+                                            <NavLink to= {page === 'Home' ? '/' : `/${page.toLowerCase()}`}/* {`${page.toLowerCase()}`} */>
+                                                {page}
+                                            </NavLink>
+                                        </Typography>
                                     </MenuItem>
                                 ))}
                             </Menu>
@@ -70,6 +75,8 @@ function Header() {
                             {pages.map((page) => (
                                 <Button
                                     key={page}
+                                    component={NavLink}
+                                    to={page === 'Home' ? '/' : `/${page.toLowerCase()}`}/* {`${page.toLowerCase()}`} */
                                     onClick={handleCloseNavMenu}
                                     sx={{ my: 2, color: 'black', display: 'block' }}
                                 >
@@ -126,7 +133,10 @@ function Header() {
                     </Toolbar>
                 </Container>
             </AppBar>
+
+            <Outlet />
         </Box>
+
     );
 }
 export default Header;

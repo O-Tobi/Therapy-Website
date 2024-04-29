@@ -1,6 +1,6 @@
 import { Typography, Box, Grid } from '@mui/material';
 import Happy from './../../assets/happy_family.jpg';
-import ButtonComponent from '../Button-component';
+import ButtonComponent from '../../Reusable Components/Button-component';
 
 function Hero() {
     return (

@@ -1,26 +1,29 @@
-
 import './App.css';
 
 import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import Service from './components/Company-Service/Service';
-import Therapists from './components/Therapists/Therapists';
-import Guide from './components/Guide/Guide';
+import Home from './components/Home/Home';
 import PatientRight from './components/Patient-right/PatientRight';
 import Footer from './components/Footer/Footer';
+import About from './components/About/About';
+import ServiceFullPage from './components/Service-fullpage/ServicesFullPage';
+import Blog from './components/Blog/Blog';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Header />
-      <Hero />
-      <Service />
-      <Therapists />
-      <Guide />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="services" element={<ServiceFullPage />} />
+        <Route path="blog" element={<Blog />} />
+      </Routes>
       <PatientRight />
       <Footer />
     </div>
   );
 }
+/* create a reuseable hero component thatn will work for about, blog and services */
 
 export default App;
