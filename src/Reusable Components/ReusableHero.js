@@ -67,7 +67,7 @@ function ReusableHero (props) {
                     component="h1" 
                     gutterBottom 
                     sx={{ 
-                        fontSize: {xs:'35px', sm: '45px', md: '55px', lg: '65px' }, 
+                        fontSize: {xs:'40px', sm: '50px', md: '60px', lg: '70px' }, 
                         }}>
                         {props.mainInfo}
                     </Typography>
