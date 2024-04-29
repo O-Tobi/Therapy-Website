@@ -1,9 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
-import Happy from './../assets/happy_family.jpg'
 import FooterQuotes from "../components/Footer/Footer-quotes";
 
 /* props
-- image
+- img
+-title
+-mainInfo
 */
 
 function ReusableHero (props) {
@@ -12,7 +13,7 @@ function ReusableHero (props) {
             sx={{
                 position: 'relative',
                 height: {xs: '70vh', sm: '90vh', md: '100vh', lg: '100vh'},
-                backgroundImage: `url(${Happy})`,
+                backgroundImage: `url(${props.img})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -57,7 +58,7 @@ function ReusableHero (props) {
                     }}>
                     
                     <Typography variant="subtitle1" gutterBottom sx={{ fontSize: {xs:'13px',sm: '15px', md: '16px', lg: '17px' }, textTransform: 'uppercase', letterSpacing: '.1rem',  }}>
-                        meet our therapists
+                        {props.title}
                     </Typography>
 
 
@@ -66,9 +67,9 @@ function ReusableHero (props) {
                     component="h1" 
                     gutterBottom 
                     sx={{ 
-                        fontSize: {xs:'30px', sm: '45px', md: '55px', lg: '65px' }, 
+                        fontSize: {xs:'35px', sm: '45px', md: '55px', lg: '65px' }, 
                         }}>
-                        Guiding you towards a joyful stress-free life.
+                        {props.mainInfo}
                     </Typography>
 
                     
