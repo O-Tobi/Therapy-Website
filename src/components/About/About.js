@@ -1,11 +1,12 @@
 import { Box } from "@mui/material";
+import ReusableHero from "../../Reusable Components/ReusableHero";
 
 function About () {
     return (
      <Box sx={{
-        paddingY: "100px"
+        marginBottom: "100px"
      }}>
-        THIS IS THE ABOUT PAGE
+      <ReusableHero/>
      </Box>
     )
 };
