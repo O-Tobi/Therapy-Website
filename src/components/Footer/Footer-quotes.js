@@ -6,15 +6,15 @@ function FooterQuotes () {
 
     // Sample array of quotes related to mental health therapy
     const quotes = [
-        "You are not alone in this journey.",
-        "It's okay to ask for help when you need it.",
-        "Healing is not linear; it's okay to have setbacks.",
-        "Your mental health matters just as much as your physical health.",
-        "Self-care is not selfish; it's necessary for your well-being.",
-        "You have the strength to overcome any challenge you face.",
-        "Your feelings are valid, and it's okay to express them.",
-        "Every step forward, no matter how small, is a victory."
+        'You are not alone in this journey. - Melody Beattie',
+        'It\'s okay to ask for help when you need it. - Lori Deschene',
+        'Healing is not linear; it\'s okay to have setbacks. - Lisa Olivera',
+        'There is hope, even when your brain tells you there isn\'t. - John Green',
+        'Mental health is not a destination, it\'s a journey. - Margaret M. Lynch',
+        'Your mental health matters. Don\'t ignore it. - J.K. Rowling',
+        'Sometimes the strongest thing you can do is surrender and just let go. - Paulo Coelho',
     ];
+    
 
     // Function to get a random quote
     const getRandomQuote = () => {
@@ -29,7 +29,14 @@ function FooterQuotes () {
 
 
     return (
-        <Typography variant="body1">"{quote}"</Typography>
+        <Typography
+        variant="body1" 
+        sx={{ 
+            fontStyle: 'italic',
+            fontSize: {xs: '12px', sm: '14px'}
+        }}>
+            "{quote}"
+        </Typography>
     )
 }
 
