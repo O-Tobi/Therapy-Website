@@ -36,7 +36,9 @@ function TherapistIntro () {
                 marginLeft: {md: '-30px'},
                 paddingRight: {md: '60px', lg:'60px'},
                 paddingTop: {md: '10px', lg:'10px'},
-                px: {xs: '20px', sm: '20px'}
+                px: {xs: '20px', sm: '20px'},
+                lineHeight: { xs: '25px', sm: '30px', md: '25px', lg: '30px' }
+
             }}>
               Finding the right fit in a therapist is essential to the therapeutic process. 
               Our therapists are trained in: Play Therapy, Equine-Facilitated Psychotherapy, 
