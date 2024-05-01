@@ -4,6 +4,17 @@ import TherapistFullInformation from "./Therapist-full-information";
 import Happy from './../../assets/happy_family.jpg'
 
 function About() {
+
+    const therapistData = [
+        {
+            id: 1,
+            names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            qualifications: "Licensed Clinical Social Worker in North Carolina, Licensed Independent Social Worker in South Carolina, Registered Play Therapist - Supervisor",
+            specialities: "Specializes in trauma-informed therapy for children and adolescents, Family therapy, Play therapy"
+        }
+    ];
+    
+
     return (
         <Box sx={{ marginBottom: "250px" }}>
             <ReusableHero
@@ -163,19 +174,9 @@ function About() {
                     </Grid>
                 </Grid>
 
-                <TherapistFullInformation
-                names="Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S" 
-                qualifications= "Licensed Clinical Social Worker in North Carolina
-                Licensed Independent Social Worker in South Carolina 
-                Registered Play Therapist - Supervisor
-                
-                Bachelor of Arts in Print Journalism at Hampton University 
-                Master of Social Work at University of North Carolina at Charlotte 
-                Graduate Certificate in Play Therapy at University of North Carolina at Charlotte"
-                specialities= "Licensed Clinical Social Worker in North Carolina
-                Licensed Independent Social Worker in South Carolina 
-                Registered Play Therapist - Supervisor" 
-                />
+
+                {/* map through this component */}
+                <TherapistFullInformation/>
                 
             </Container>
         </Box>
