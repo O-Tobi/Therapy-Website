@@ -16,6 +16,7 @@ function Hero() {
                 justifyContent: 'center',
                 alignItems: {xs: 'center', sm: 'flex-start', md: 'flex-start', lg: 'flex-start'},
                 flexDirection: 'column',
+                margin: {xs: '10px', sm: '10px', md: '10px', lg: '10px'}
             }}
         >
             {/* Dark overlay */}
