@@ -13,7 +13,8 @@ function About() {
 
             <Container sx={{ 
                 marginTop: { xs: '40px', sm: '60px', md: '80px', lg: '80px' }, 
-                textAlign: 'center' 
+                textAlign: 'center',
+                
                 }}>
                 <Box sx={{ width: { xs: '100%', md: '75%', lg: '75%', xl: '50%' }, marginLeft: 'auto', marginRight: 'auto' }}>
                     <Typography
@@ -60,7 +61,6 @@ function About() {
                     marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' }, 
                     paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' }, 
                     paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' }, 
-                    justifyContent: 'center',
                     marginBottom: { xs: '-450px', sm: '250px', md: '40px', lg: '40px' },
                     }}>
                     <Grid item xs={12} sm={6} md={6} lg={6}>
@@ -69,13 +69,14 @@ function About() {
                             backgroundImage: `url(${Happy})`, 
                             backgroundPosition: 'center', 
                             backgroundSize: 'cover', 
-                            backgroundRepeat: 'no-repeat', 
+                            /* backgroundRepeat: 'no-repeat', */ 
                             width: '80%', 
                             height: '100%', 
                             borderTopLeftRadius: 0, 
                             borderTopRightRadius: 0, 
                             borderBottomLeftRadius: 180, 
-                            borderBottomRightRadius: 180 
+                            borderBottomRightRadius: 180,
+                            marginLeft: { xs: '30px', sm: '0px' },
                             }} />
                     </Grid>
 
