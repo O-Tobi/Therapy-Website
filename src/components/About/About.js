@@ -1,21 +1,23 @@
 import { Box, Typography, Container, Grid } from "@mui/material";
 import ReusableHero from "../../Reusable Components/ReusableHero";
+import TherapistFullInformation from "./Therapist-full-information";
 import Happy from './../../assets/happy_family.jpg'
 
 function About() {
     return (
-        <Box sx={{ marginBottom: "100px" }}>
+        <Box sx={{ marginBottom: "250px" }}>
             <ReusableHero
                 img={Happy}
                 title="meet our therapists"
                 mainInfo="Guiding you towards a joyful stress-free life."
             />
 
-            <Container sx={{ 
-                marginTop: { xs: '40px', sm: '60px', md: '80px', lg: '80px' }, 
+            <Container sx={{
+                marginTop: { xs: '40px', sm: '60px', md: '80px', lg: '80px' },
                 textAlign: 'center',
-                
-                }}>
+
+            }}>
+                {/* words under the hero */}
                 <Box sx={{ width: { xs: '100%', md: '75%', lg: '75%', xl: '50%' }, marginLeft: 'auto', marginRight: 'auto' }}>
                     <Typography
                         variant="h6"
@@ -53,30 +55,32 @@ function About() {
                     </Typography>
                 </Box>
 
-                <Grid 
-                container
-                spacing={4}
-                 sx={{ 
-                    height: { xs: '1000px', sm: '70vh', md: '80vh', lg: '90vh' }, 
-                    marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' }, 
-                    paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' }, 
-                    paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' }, 
-                    marginBottom: { xs: '-450px', sm: '250px', md: '40px', lg: '40px' },
+
+                {/* images and words for about page */}
+                <Grid
+                    container
+                    spacing={4}
+                    sx={{
+                        height: { xs: '1000px', sm: '70vh', md: '80vh', lg: '90vh' },
+                        marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
+                        paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
+                        paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
+                        marginBottom: { xs: '-450px', sm: '250px', md: '40px', lg: '40px' },
                     }}>
                     <Grid item xs={12} sm={6} md={6} lg={6}>
-                        <Box 
-                        sx={{ 
-                            backgroundImage: `url(${Happy})`, 
-                            backgroundPosition: 'center', 
-                            backgroundSize: 'cover', 
-                            /* backgroundRepeat: 'no-repeat', */ 
-                            width: '80%', 
-                            height: '100%', 
-                            borderTopLeftRadius: 0, 
-                            borderTopRightRadius: 0, 
-                            borderBottomLeftRadius: 180, 
-                            borderBottomRightRadius: 180,
-                            marginLeft: { xs: '30px', sm: '0px' },
+                        <Box
+                            sx={{
+                                backgroundImage: `url(${Happy})`,
+                                backgroundPosition: 'center',
+                                backgroundSize: 'cover',
+                                /* backgroundRepeat: 'no-repeat', */
+                                width: '80%',
+                                height: '100%',
+                                borderTopLeftRadius: 0,
+                                borderTopRightRadius: 0,
+                                borderBottomLeftRadius: 180,
+                                borderBottomRightRadius: 180,
+                                marginLeft: { xs: '30px', sm: '0px' },
                             }} />
                     </Grid>
 
@@ -120,6 +124,7 @@ function About() {
                     </Grid>
                 </Grid>
 
+                {/* meet the therapists */}
                 <Grid container spacing={.5} sx={{ marginTop: { xs: '200px', lg: '30px' } }}>
                     <Grid item xs={12} sm={12} md={4} lg={4}>
                         <Typography
@@ -157,6 +162,21 @@ function About() {
                         </Typography>
                     </Grid>
                 </Grid>
+
+                <TherapistFullInformation
+                names="Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S" 
+                qualifications= "Licensed Clinical Social Worker in North Carolina
+                Licensed Independent Social Worker in South Carolina 
+                Registered Play Therapist - Supervisor
+                
+                Bachelor of Arts in Print Journalism at Hampton University 
+                Master of Social Work at University of North Carolina at Charlotte 
+                Graduate Certificate in Play Therapy at University of North Carolina at Charlotte"
+                specialities= "Licensed Clinical Social Worker in North Carolina
+                Licensed Independent Social Worker in South Carolina 
+                Registered Play Therapist - Supervisor" 
+                />
+                
             </Container>
         </Box>
     );
