@@ -5,15 +5,40 @@ import Happy from './../../assets/happy_family.jpg'
 
 function About() {
 
-    const therapistData = [
+    const therapistsData = [
         {
             id: 1,
+            name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
-            qualifications: "Licensed Clinical Social Worker in North Carolina, Licensed Independent Social Worker in South Carolina, Registered Play Therapist - Supervisor",
-            specialities: "Specializes in trauma-informed therapy for children and adolescents, Family therapy, Play therapy"
+            qualifications: [
+                "1",
+                "2",
+                "3",
+            ],
+            specialities: [
+                "1",
+                "2",
+                "3",
+            ],
+        },
+
+        {
+            id: 2,
+            name: "Janice",
+            names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            qualifications: [
+                "1",
+                "2",
+                "3",
+            ],
+            specialities: [
+                "1",
+                "2",
+                "3",
+            ],
         }
     ];
-    
+
 
     return (
         <Box sx={{ marginBottom: "250px" }}>
@@ -176,8 +201,26 @@ function About() {
 
 
                 {/* map through this component */}
-                <TherapistFullInformation/>
-                
+                {therapistsData.map((therapistData) =>
+                    <TherapistFullInformation
+                        key={therapistData.id}
+                        name={therapistData.name}
+                        names={therapistData.names}
+                        qualifications={therapistData.qualifications.map((qualification, index) => (
+                            <ul>
+                                <li>{qualification}</li>
+                            </ul>
+                        ))}
+
+                        specialities={therapistData.specialities.map((speciality, index) => (
+                            <ul>
+                                <li>{speciality}</li>
+                            </ul>
+                        ))}
+
+                    />
+                )}
+
             </Container>
         </Box>
     );

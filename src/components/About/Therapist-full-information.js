@@ -1,5 +1,7 @@
-import { Box, container, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import Happy from './../../assets/happy_family.jpg';
+import ButtonComponent from "../Reusable Components/Button-component";
+
 
 /* 
 props
@@ -62,7 +64,7 @@ function TherapistFullInformation(props) {
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
                             lineHeight: { xs: '30px', sm: '30px', md: '40px', lg: '40px' },
-                            textAlign: 'left' 
+                            textAlign: 'left'
                         }}
                     >
                         QUALIFICATIONS:
@@ -73,17 +75,19 @@ function TherapistFullInformation(props) {
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
                             lineHeight: { xs: '30px', sm: '30px', md: '40px', lg: '40px' },
-                            textAlign: 'left'
+                            textAlign: 'left',
+                            marginLeft: '30px'
                         }}
                     >
                         {props.qualifications}
                     </Typography>
 
+        
                     <Typography
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
                             lineHeight: { xs: '30px', sm: '30px', md: '40px', lg: '40px' },
-                            textAlign: 'left' 
+                            textAlign: 'left'
                         }}
                     >
                         SPECIALITIES:
@@ -93,11 +97,21 @@ function TherapistFullInformation(props) {
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
                             lineHeight: { xs: '30px', sm: '30px', md: '40px', lg: '40px' },
-                            textAlign: 'left'
+                            textAlign: 'left',
+                            marginLeft: '30px'
                         }}
                     >
-                        {props.specialities}
+                     {props.specialities}
+
                     </Typography>
+
+                    <ButtonComponent
+                        buttonName= {`get to know ${props.name}`}
+                        variant="contained"
+                        buttonColor="white"
+                    />
+
+
                 </Box>
             </Grid>
         </Grid>
