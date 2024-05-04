@@ -1,5 +1,4 @@
 import { Box, Typography, Grid } from "@mui/material";
-import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";
 
 
@@ -29,7 +28,7 @@ function TherapistFullInformation(props) {
             <Grid item xs={12} sm={6} md={6} lg={6}>
                 <Box
                     sx={{
-                        backgroundImage: `url(${Happy})`,
+                        backgroundImage: `url(${props.therapistImg})`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         /* backgroundRepeat: 'no-repeat', */
@@ -57,7 +56,30 @@ function TherapistFullInformation(props) {
                         {props.names}
                     </Typography>
 
+                    
+                    
+                    {/* therapist locations */}
+                    <Typography
+                        sx={{
+                            fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
+                            lineHeight: { xs: '30px', sm: '30px', md: '40px', lg: '40px' },
+                            textAlign: 'left'
+                        }}
+                    >
+                        LOCATIONS:
+                    </Typography>
 
+                    {/* therapist locations */}
+                    <Typography
+                        sx={{
+                            fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
+                            lineHeight: { xs: '30px', sm: '30px', md: '40px', lg: '40px' },
+                            textAlign: 'left',
+                            marginLeft: '30px'
+                        }}
+                    >
+                        {props.locations}
+                    </Typography>
 
                     {/* therapist qualifications */}
                     <Typography
@@ -70,7 +92,7 @@ function TherapistFullInformation(props) {
                         QUALIFICATIONS:
                     </Typography>
 
-                    {/* therapist specialities */}
+                    {/* therapist qualifications */}
                     <Typography
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
@@ -105,11 +127,13 @@ function TherapistFullInformation(props) {
 
                     </Typography>
 
-                    <ButtonComponent
-                        buttonName= {`get to know ${props.name}`}
-                        variant="contained"
-                        buttonColor="white"
-                    />
+                    <Box>
+                        <ButtonComponent
+                            buttonName= {`get to know ${props.name}`}
+                            variant="contained"
+                            buttonColor="white"
+                        />
+                    </Box>
 
 
                 </Box>

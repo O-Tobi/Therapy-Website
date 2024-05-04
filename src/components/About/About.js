@@ -8,8 +8,12 @@ function About() {
     const therapistsData = [
         {
             id: 1,
+            therapistImg: {Happy},
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            locations:[
+                "Detroit"
+            ],
             qualifications: [
                 "1",
                 "2",
@@ -26,6 +30,10 @@ function About() {
             id: 2,
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            locations:[
+                "Detroit",
+                "Michigan"
+            ],
             qualifications: [
                 "1",
                 "2",
@@ -204,19 +212,31 @@ function About() {
                 {therapistsData.map((therapistData) =>
                     <TherapistFullInformation
                         key={therapistData.id}
+                        therapistImg= {therapistData.therapistImg}
                         name={therapistData.name}
                         names={therapistData.names}
-                        qualifications={therapistData.qualifications.map((qualification, index) => (
+                        locations={(
                             <ul>
-                                <li>{qualification}</li>
+                                {therapistData.locations.map((location, index) => (
+                                    <li key={index}>{location}</li>
+                                ))}
                             </ul>
-                        ))}
-
-                        specialities={therapistData.specialities.map((speciality, index) => (
+                        )}
+                        
+                        qualifications={(
                             <ul>
-                                <li>{speciality}</li>
+                                {therapistData.qualifications.map((qualification, index) => (
+                                    <li key={index}>{qualification}</li>
+                                ))}
                             </ul>
-                        ))}
+                        )}
+                        specialities={(
+                            <ul>
+                                {therapistData.specialities.map((speciality, index) => (
+                                    <li key={index}>{speciality}</li>
+                                ))}
+                            </ul>
+                        )}
 
                     />
                 )}

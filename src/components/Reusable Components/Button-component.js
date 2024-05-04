@@ -17,7 +17,7 @@ function ButtonComponent (props) {
             endIcon: props.buttonEndicon,
             letterSpacing: props.buttonTextspacing
         }}>
-            {props.buttonName}    
+            {props.buttonName}
         </Button>
     )
 };

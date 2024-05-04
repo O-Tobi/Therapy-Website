@@ -2,7 +2,7 @@ import { Container, Box } from "@mui/material";
 import TherapistIntro from "./Therapist-Intro";
 import TherapistAvatar from "./Therapists-Avatar";
 import Happy from './../../assets/happy_family.jpg';
-import ButtonComponent from "../../Reusable Components/Button-component";
+import ButtonComponent from "../Reusable Components/Button-component";
 
 function Therapists() {
     const avatarProps = [
