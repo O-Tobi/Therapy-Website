@@ -1,5 +1,5 @@
 import { Box, Typography, Container, Grid } from "@mui/material";
-import ReusableHero from "../../Reusable Components/ReusableHero";
+import ReusableHero from "../Reusable Components/ReusableHero";
 import TherapistFullInformation from "./Therapist-full-information";
 import Happy from './../../assets/happy_family.jpg'
 
@@ -208,7 +208,6 @@ function About() {
                 </Grid>
 
 
-                {/* map through this component */}
                 {therapistsData.map((therapistData) =>
                     <TherapistFullInformation
                         key={therapistData.id}
@@ -222,7 +221,7 @@ function About() {
                                 ))}
                             </ul>
                         )}
-                        
+
                         qualifications={(
                             <ul>
                                 {therapistData.qualifications.map((qualification, index) => (
@@ -240,6 +239,7 @@ function About() {
 
                     />
                 )}
+
 
             </Container>
         </Box>

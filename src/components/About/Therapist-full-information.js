@@ -20,7 +20,7 @@ function TherapistFullInformation(props) {
                 marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
                 paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
                 paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
-                marginBottom: { xs: '-450px', sm: '250px', md: '40px', lg: '40px' },
+                marginBottom: { xs: '-450px', sm: '250px', md: '40px', lg: '90px' },
 
             }}>
 
@@ -38,7 +38,7 @@ function TherapistFullInformation(props) {
                     }} />
             </Grid>
 
-
+            
             {/* therapist data */}
             <Grid item xs={12} sm={6} md={6} lg={6}>
                 <Box>
@@ -56,8 +56,7 @@ function TherapistFullInformation(props) {
                         {props.names}
                     </Typography>
 
-                    
-                    
+
                     {/* therapist locations */}
                     <Typography
                         sx={{
@@ -104,7 +103,7 @@ function TherapistFullInformation(props) {
                         {props.qualifications}
                     </Typography>
 
-        
+
                     <Typography
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },

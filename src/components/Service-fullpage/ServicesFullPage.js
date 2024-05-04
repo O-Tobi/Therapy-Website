@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
-import ReusableHero
- from "../../Reusable Components/ReusableHero";
+import ReusableHero from "../Reusable Components/ReusableHero";
  import Happy from './../../assets/happy_family.jpg'
 
 function ServiceFullPage () {
