@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import FooterQuotes from "../components/Footer/Footer-quotes";
+import FooterQuotes from './../Footer/Footer-quotes';
 
 /* props
 - img

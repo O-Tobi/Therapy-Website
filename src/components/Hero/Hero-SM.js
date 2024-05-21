@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import ButtonComponent from "../../Reusable Components/Button-component";
+import ButtonComponent from "../Reusable Components/Button-component";
 
 function HeroSm() {
     return (
