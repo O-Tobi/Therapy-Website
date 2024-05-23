@@ -20,7 +20,7 @@ function TherapistFullInformation(props) {
                 marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
                 paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
                 paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
-                marginBottom: { xs: '-450px', sm: '250px', md: '40px', lg: '90px' },
+                marginBottom: { xs: '-450px', sm: '250px', md: '250px', lg: '90px' },
 
             }}>
 
@@ -31,7 +31,6 @@ function TherapistFullInformation(props) {
                         backgroundImage: `url(${props.therapistImg})`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
-                        /* backgroundRepeat: 'no-repeat', */
                         width: { xs: '100%', sm: '80%', md: '80%', lg: '80%' },
                         height: '100%',
                         borderRadius: '20px',

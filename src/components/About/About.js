@@ -8,11 +8,33 @@ function About() {
     const therapistsData = [
         {
             id: 1,
-            therapistImg: {Happy},
+            therapistImg: Happy,
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
             locations:[
                 "Detroit"
+            ],
+            qualifications: [
+                "1",
+                "2",
+                "3",
+                
+            ],
+            specialities: [
+                "1",
+                "2",
+                "3",
+            ],
+        },
+
+        {
+            id: 2,
+            therapistImg: Happy,
+            name: "Janice",
+            names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            locations:[
+                "Detroit",
+                "Michigan"
             ],
             qualifications: [
                 "1",
@@ -27,7 +49,29 @@ function About() {
         },
 
         {
-            id: 2,
+            id: 3,
+            therapistImg: Happy,
+            name: "Janice",
+            names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            locations:[
+                "Detroit",
+                "Michigan"
+            ],
+            qualifications: [
+                "1",
+                "2",
+                "3",
+            ],
+            specialities: [
+                "1",
+                "2",
+                "3",
+            ],
+        },
+
+        {
+            id: 4,
+            therapistImg: Happy,
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
             locations:[
@@ -49,7 +93,7 @@ function About() {
 
 
     return (
-        <Box sx={{ marginBottom: "250px" }}>
+        <Box sx={{ marginBottom: { xs: '250px', sm: '250px', md: '350px', lg: '250px' } }}>
             <ReusableHero
                 img={Happy}
                 title="meet our therapists"
