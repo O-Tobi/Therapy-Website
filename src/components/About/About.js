@@ -161,7 +161,6 @@ function About() {
                                 backgroundImage: `url(${Happy})`,
                                 backgroundPosition: 'center',
                                 backgroundSize: 'cover',
-                                /* backgroundRepeat: 'no-repeat', */
                                 width: '80%',
                                 height: '100%',
                                 borderTopLeftRadius: 0,

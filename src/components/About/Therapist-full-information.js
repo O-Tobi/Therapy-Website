@@ -20,7 +20,7 @@ function TherapistFullInformation(props) {
                 marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
                 paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
                 paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
-                marginBottom: { xs: '-450px', sm: '250px', md: '250px', lg: '90px' },
+                marginBottom: { xs: '-250px', sm: '250px', md: '250px', lg: '120px' },
 
             }}>
 
