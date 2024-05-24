@@ -16,78 +16,136 @@ function About() {
                 "Detroit"
             ],
             qualifications: [
-                "1",
-                "2",
-                "3",
-
+                "Licensed Clinical Social Worker in North Carolina",
+                "Licensed Independent Social Worker in South Carolina",
+                "Registered Play Therapist - Supervisor",
+                "Master of Social Work at University of North Carolina at Charlotte",
             ],
             specialities: [
-                "1",
-                "2",
-                "3",
+                "Play Therapy",
+                "Anxiety"   
             ],
         },
 
         {
             id: 2,
             therapistImg: Happy,
-            name: "Janice",
-            names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            name: "Brittany",
+            names: "Brittany Allman, MSW, LCSWA",
             locations: [
-                "Detroit",
-                "Michigan"
+                "Salisbury - Saving Grace Farm"
             ],
             qualifications: [
-                "1",
-                "2",
-                "3",
+                "Licensed Clinical Social Worker in North Carolina",
+                "Licensed Independent Social Worker in South Carolina",
+                "Registered Play Therapist - Supervisor",
+                "Master of Social Work at University of North Carolina at Charlotte",
             ],
             specialities: [
-                "1",
-                "2",
-                "3",
+                "Play Therapy",
+                "Anxiety"   
             ],
         },
 
         {
             id: 3,
             therapistImg: Happy,
-            name: "Janice",
-            names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            name: "Christina",
+            names: "Christina “Christy” Barrett, MSW, LCSWA",
             locations: [
-                "Detroit",
-                "Michigan"
+                "Charlotte - University",
+                "Charlotte - South Park"
+                
             ],
             qualifications: [
-                "1",
-                "2",
-                "3",
+                "Licensed Clinical Social Worker in North Carolina",
+                "Licensed Independent Social Worker in South Carolina",
+                "Registered Play Therapist - Supervisor",
+                "Master of Social Work at University of North Carolina at Charlotte",
             ],
             specialities: [
-                "1",
-                "2",
-                "3",
+                "Play Therapy",
+                "Anxiety"   
             ],
         },
 
         {
             id: 4,
             therapistImg: Happy,
-            name: "Janice",
-            names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
+            name: "Nashara",
+            names: "Nashara Bynum, MSW, LCSWA",
             locations: [
                 "Detroit",
-                "Michigan"
             ],
             qualifications: [
-                "1",
-                "2",
-                "3",
+                "Licensed Clinical Social Worker in North Carolina",
+                "Licensed Independent Social Worker in South Carolina",
+                "Registered Play Therapist - Supervisor",
+                "Master of Social Work at University of North Carolina at Charlotte",
             ],
             specialities: [
-                "1",
-                "2",
-                "3",
+                "Play Therapy",
+                "Anxiety"   
+            ],
+        },
+
+        {
+            id: 5,
+            therapistImg: Happy,
+            name: "Kamiya",
+            names: "Kamiya Jones, MSW, LCSWA",
+            locations: [
+                "Telehealth",
+            ],
+            qualifications: [
+                "Licensed Clinical Social Worker in North Carolina",
+                "Licensed Independent Social Worker in South Carolina",
+                "Registered Play Therapist - Supervisor",
+                "Master of Social Work at University of North Carolina at Charlotte",
+            ],
+            specialities: [
+                "Play Therapy",
+                "Anxiety"   
+            ],
+        },
+
+        {
+            id: 6,
+            therapistImg: Happy,
+            name: "Blake",
+            names: "Blake Kellum, MA, LCMHCA",
+            locations: [
+                "Telehealth",
+            ],
+            qualifications: [
+                "Licensed Clinical Social Worker in North Carolina",
+                "Licensed Independent Social Worker in South Carolina",
+                "Registered Play Therapist - Supervisor",
+                "Master of Social Work at University of North Carolina at Charlotte",
+            ],
+            specialities: [
+                "Grief",
+                "Anxiety"   
+            ],
+        },
+
+        {
+            id: 7,
+            therapistImg: Happy,
+            name: "Erica",
+            names: "Erica Kerr Sued, MA, LCMHCA",
+            locations: [
+                "Telehealth",
+            ],
+            qualifications: [
+                "Licensed Clinical Social Worker in North Carolina",
+                "Licensed Independent Social Worker in South Carolina",
+                "Registered Play Therapist - Supervisor",
+                "Master of Social Work at University of North Carolina at Charlotte",
+            ],
+            specialities: [
+                "Grief",
+                "Depression"   
             ],
         }
     ];
