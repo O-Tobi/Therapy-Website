@@ -2,6 +2,7 @@ import { Box, Typography, Container, Grid } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import TherapistFullInformation from "./Therapist-full-information";
 import Happy from './../../assets/happy_family.jpg'
+import SubHero from "../Reusable Components/SubHero";
 
 function About() {
 
@@ -11,14 +12,14 @@ function About() {
             therapistImg: Happy,
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
-            locations:[
+            locations: [
                 "Detroit"
             ],
             qualifications: [
                 "1",
                 "2",
                 "3",
-                
+
             ],
             specialities: [
                 "1",
@@ -32,7 +33,7 @@ function About() {
             therapistImg: Happy,
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
-            locations:[
+            locations: [
                 "Detroit",
                 "Michigan"
             ],
@@ -53,7 +54,7 @@ function About() {
             therapistImg: Happy,
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
-            locations:[
+            locations: [
                 "Detroit",
                 "Michigan"
             ],
@@ -74,7 +75,7 @@ function About() {
             therapistImg: Happy,
             name: "Janice",
             names: "Janiece Jenkins, MSW, LCSW, LISW-CP, RPT-S",
-            locations:[
+            locations: [
                 "Detroit",
                 "Michigan"
             ],
@@ -254,7 +255,7 @@ function About() {
                 {therapistsData.map((therapistData) =>
                     <TherapistFullInformation
                         key={therapistData.id}
-                        therapistImg= {therapistData.therapistImg}
+                        therapistImg={therapistData.therapistImg}
                         name={therapistData.name}
                         names={therapistData.names}
                         locations={(
@@ -285,6 +286,19 @@ function About() {
 
 
             </Container>
+
+            <SubHero
+            img = {Happy}
+            buttonName = "contact us today!"
+            variant = "contained"
+            mainInfo = "We Look Forward To Hearing From You!"
+            subInfo = "AND HOW WE CAN HELP YOU & YOUR LOVED ONES AT ctc!"
+            justifyContent = "center"
+            textAlign = "center"
+            marginTop={{xs: "50px", lg: "250px"}}
+            />
+
+
         </Box>
     );
 };

@@ -7,7 +7,7 @@ function Hero() {
         <Box
             sx={{
                 position: 'relative',
-                height: {xs: '50vh', sm: '90vh', md: '100vh', lg: '100vh'},
+                height: {xs: '40vh', sm: '90vh', md: '100vh', lg: '100vh'},
                 backgroundImage: `url(${Happy})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
