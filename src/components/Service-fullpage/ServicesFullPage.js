@@ -45,11 +45,17 @@ function ServiceFullPage() {
                 </Grid>
             </Grid>
 
-            <Container>
+            <Box
+            sx={{
+                marginX: "25px"
+            }}>
                 <Grid
                     container
                     spacing={2}
-                    sx={{ justifyItems: "self" }}
+                    sx={{ 
+                        justifyItems: "self",
+                        
+                    }}
                 >
                     <Grid item lg={6} md={6} sm={12} xs={12}>
                         <Box
@@ -61,7 +67,7 @@ function ServiceFullPage() {
                                 alignItems: "center",
                                 display: "flex",
                                 flexDirection: "column",
-                                justifyContent: "space-between",
+                                /* justifyContent: "space-between", */
                                 height: "100%"
                             }}
                         >
@@ -76,9 +82,18 @@ function ServiceFullPage() {
                                 What We Help With
                             </Typography>
 
-                            <Typography sx={{ fontSize: "15px", flex: 1 }}>
+                            <Typography 
+                            sx={{ 
+                                fontSize: "15px", 
+                                flex: 1,
+                                columns: 2, 
+                                columnGap: "50px", 
+                                lineHeight: "35px",
+                                width: "80%",
+                                height: "70%",
+                                }}>
                                 <ul>
-                                    <li>Oppositional Defiance</li>
+                                    <li>Oppositional Defiance </li>
                                     <li>Self-Esteem</li>
                                     <li>Relationship Turmoil</li>
                                     <li>Marital/Premarital Issues</li>
@@ -110,7 +125,7 @@ function ServiceFullPage() {
                                 alignItems: "center",
                                 display: "flex",
                                 flexDirection: "column",
-                                justifyContent: "space-between",
+                                /* justifyContent: "space-between", */
                                 height: "100%"
                             }}
                         >
@@ -125,7 +140,16 @@ function ServiceFullPage() {
                                 Methodology Used
                             </Typography>
 
-                            <Typography sx={{ fontSize: "15px", flex: 1 }}>
+                            <Typography 
+                            sx={{ 
+                                fontSize: "15px", 
+                                flex: 1, 
+                                columns: 2,
+                                columnGap: "50px", 
+                                lineHeight: "35px",
+                                width: "80%",
+                                height: "70%",
+                                }}>
                                 <ul>
                                     <li>Equine Facilitated Psychotherapy</li>
                                     <li>Cognitive Behavioral Therapy</li>
@@ -147,7 +171,7 @@ function ServiceFullPage() {
                         </Box>
                     </Grid>
                 </Grid>
-            </Container>
+            </Box>
 
             <Box
                 sx={{
