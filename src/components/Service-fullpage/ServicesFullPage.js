@@ -1,8 +1,9 @@
 // src/components/ServiceFullPage.jsx
 
-import { Box, Grid, Typography, Container } from "@mui/material";
+import { Box, Grid, Typography, } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
+import ButtonComponent from "../Reusable Components/Button-component";
 
 function ServiceFullPage() {
     return (
@@ -25,7 +26,7 @@ function ServiceFullPage() {
                     <Typography
                         variant="h3"
                         sx={{
-                            fontSize: { xs: "30px", sm: "40px", md: "50px", lg: "60px" },
+                            fontSize: { xs: "35px", sm: "40px", md: "50px", lg: "60px" },
                             color: '#008DDA'
                         }}
                     >
@@ -47,7 +48,8 @@ function ServiceFullPage() {
 
             <Box
             sx={{
-                marginX: "25px"
+                marginX: "25px",
+            
             }}>
                 <Grid
                     container
@@ -55,9 +57,10 @@ function ServiceFullPage() {
                     sx={{ 
                         justifyItems: "self",
                         
+                        
                     }}
                 >
-                    <Grid item lg={6} md={6} sm={12} xs={12}>
+                    <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Box
                             sx={{
                                 backgroundColor: "#0E3135",
@@ -74,8 +77,8 @@ function ServiceFullPage() {
                             <Typography
                                 sx={{
                                     color: "#5ADBF2",
-                                    fontSize: "45px",
-                                    marginTop: "60px",
+                                    fontSize: {xs: "33px", sm: "28px", md: "45px", lg: "45px"},
+                                    marginTop: {xs: "30px", sm: "45px", md: "45px", lg: "60px"},
                                     marginBottom: "25px"
                                 }}
                             >
@@ -84,13 +87,13 @@ function ServiceFullPage() {
 
                             <Typography 
                             sx={{ 
-                                fontSize: "15px", 
+                                fontSize: {xs: "15px", sm: "12px", md: "15px", lg: "15px"}, 
                                 flex: 1,
-                                columns: 2, 
-                                columnGap: "50px", 
-                                lineHeight: "35px",
-                                width: "80%",
-                                height: "70%",
+                                columns: {xs: "1", sm: "2", md: "2", lg: "2"}, 
+                                columnGap: { sm: "60px", md: "50px", lg: "50px"}, 
+                                lineHeight: {xs: "25px", sm: "30px", md: "35px", lg: "35px"},
+                                width: {xs: "100%", sm: "90%", md: "80%", lg: "80%"},
+                                /* height: "70%", */
                                 }}>
                                 <ul>
                                     <li>Oppositional Defiance </li>
@@ -112,10 +115,11 @@ function ServiceFullPage() {
                                     <li>Grief and Loss</li>
                                 </ul>
                             </Typography>
+                            <ButtonComponent/>
                         </Box>
                     </Grid>
 
-                    <Grid item lg={6} md={6} sm={12} xs={12}>
+                    <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Box
                             sx={{
                                 backgroundColor: "#0E3135",
@@ -132,8 +136,8 @@ function ServiceFullPage() {
                             <Typography
                                 sx={{
                                     color: "#5ADBF2",
-                                    fontSize: "45px",
-                                    marginTop: "60px",
+                                    fontSize: {xs: "33px", sm: "28px", md: "45px", lg: "45px"},
+                                    marginTop: {xs: "30px", sm: "45px", md: "45px", lg: "60px"},
                                     marginBottom: "25px"
                                 }}
                             >
@@ -142,13 +146,13 @@ function ServiceFullPage() {
 
                             <Typography 
                             sx={{ 
-                                fontSize: "15px", 
+                                fontSize: {xs: "15px", sm: "12px", md: "15px", lg: "15px"}, 
                                 flex: 1, 
-                                columns: 2,
-                                columnGap: "50px", 
-                                lineHeight: "35px",
-                                width: "80%",
-                                height: "70%",
+                                columns: {xs: "1", sm: "2", md: "2", lg: "2"},
+                                columnGap: { sm: "60px", md: "50px", lg: "50px"}, 
+                                lineHeight: {xs: "25px", sm: "30px", md: "35px", lg: "35px"},
+                                width: {xs: "100%", sm: "90%", md: "80%", lg: "80%"},
+                                /* height: "70%", */
                                 }}>
                                 <ul>
                                     <li>Equine Facilitated Psychotherapy</li>
@@ -164,8 +168,8 @@ function ServiceFullPage() {
                                     <li>Sandtray Therapy</li>
                                     <li>Mindfulness Practices</li>
                                     <li>Animal-Assisted Therapy</li>
-                                    <li>Positive Psychology</li>
-                                    <li>Person-Centered Therapy</li>
+                                    {/* <li>Positive Psychology</li>
+                                    <li>Person-Centered Therapy</li> */}
                                 </ul>
                             </Typography>
                         </Box>
