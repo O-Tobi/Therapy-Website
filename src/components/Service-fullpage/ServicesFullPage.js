@@ -1,5 +1,6 @@
 // src/components/ServiceFullPage.jsx
 
+import React, { useState } from "react";
 import { Box, Grid, Typography, } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
@@ -7,6 +8,12 @@ import ButtonComponent from "../Reusable Components/Button-component";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function ServiceFullPage() {
+    const [showMethodology, setShowMethodology] =useState(false);
+
+    const toggleMethodology = () => {
+        setShowMethodology(!showMethodology);
+    }
+
     return (
         <Box sx={{ marginBottom: "100px" }}>
             <ReusableHero
@@ -48,19 +55,20 @@ function ServiceFullPage() {
             </Grid>
 
             <Box
-            sx={{
-                marginX: "25px",
-            
-            }}>
+                sx={{
+                    marginX: "25px",
+
+                }}>
                 <Grid
                     container
                     spacing={2}
-                    sx={{ 
+                    sx={{
                         justifyItems: "self",
-                        
-                        
+
+
                     }}
                 >
+                    {/* toggling should happen from here */}
                     <Grid item lg={6} md={6} sm={12} xs={12}>
                         <Box
                             sx={{
@@ -78,27 +86,27 @@ function ServiceFullPage() {
                             <Typography
                                 sx={{
                                     color: "#5ADBF2",
-                                    fontSize: {xs: "33px", sm: "40px", md: "45px", lg: "45px"},
-                                    marginTop: {xs: "30px", sm: "45px", md: "45px", lg: "60px"},
+                                    fontSize: { xs: "33px", sm: "40px", md: "45px", lg: "45px" },
+                                    marginTop: { xs: "30px", sm: "45px", md: "45px", lg: "60px" },
                                     marginBottom: "25px",
                                     textAlign: "center",
-                                    marginLeft: {xs: "10px", sm: "0px", md: "5px", lg: "0px"}
+                                    marginLeft: { xs: "10px", sm: "0px", md: "5px", lg: "0px" }
 
                                 }}
                             >
                                 What We Help With
                             </Typography>
 
-                            <Typography 
-                            sx={{ 
-                                fontSize: "15px",
-                                flex: 1,
-                                columns: {xs: "1", sm: "2", md: "2", lg: "2"}, 
-                                columnGap: { sm: "60px", md: "50px", lg: "50px"}, 
-                                lineHeight: {xs: "25px", sm: "30px", md: "35px", lg: "35px"},
-                                width: {xs: "100%", sm: "90%", md: "80%", lg: "80%"},
-                                marginLeft: {xs: "25px", sm: "75px", md: "20px"}
-                                /* height: "70%", */
+                            <Typography
+                                sx={{
+                                    fontSize: "15px",
+                                    flex: 1,
+                                    columns: { xs: "1", sm: "2", md: "2", lg: "2" },
+                                    columnGap: { sm: "60px", md: "50px", lg: "50px" },
+                                    lineHeight: { xs: "25px", sm: "30px", md: "35px", lg: "35px" },
+                                    width: { xs: "100%", sm: "90%", md: "80%", lg: "80%" },
+                                    marginLeft: { xs: "25px", sm: "75px", md: "20px" }
+                                    /* height: "70%", */
                                 }}>
                                 <ul>
                                     <li>Oppositional Defiance </li>
@@ -120,21 +128,27 @@ function ServiceFullPage() {
                                     <li>Grief and Loss</li>
                                 </ul>
                             </Typography>
+
+
                             <Box
-                            sx={{
-                                visibility: {xs: "visible", sm: "visible", md: "hidden", lg: "hidden"}
-                            }}
+                                sx={{
+                                    display: { xs: "block", sm: "block", md: "none", lg: "none" }
+                                }}
                             >
                                 <ButtonComponent
-                                buttonName= "Methodology Used"
-                                /* buttonEndicon={<ArrowRightAltIcon />} */
-                                variant= "contained"
+                                    buttonName="Methodology Used"
+                                    onClick={toggleMethodology}
+                                    /* buttonEndicon={<ArrowRightAltIcon />} */
+                                    variant="contained"
                                 />
                             </Box>
                         </Box>
                     </Grid>
 
-                    <Grid item lg={6} md={6} sm={12} xs={12}>
+                    <Grid item lg={6} md={6} sm={12} xs={12}
+                        sx={{
+                            display: { xs: "none", sm: "none", md: "block", }
+                        }}>
                         <Box
                             sx={{
                                 backgroundColor: "#0E3135",
@@ -151,48 +165,57 @@ function ServiceFullPage() {
                             <Typography
                                 sx={{
                                     color: "#5ADBF2",
-                                    fontSize: {xs: "33px", sm: "40px", md: "45px", lg: "45px"},
-                                    marginTop: {xs: "30px", sm: "45px", md: "45px", lg: "60px"},
+                                    fontSize: { xs: "33px", sm: "40px", md: "45px", lg: "45px" },
+                                    marginTop: { xs: "30px", sm: "45px", md: "45px", lg: "60px" },
                                     marginBottom: "25px",
                                     textAlign: "center",
-                                    marginLeft: {xs: "10px", sm: "0px", md: "5px", lg: "0px"}
+                                    marginLeft: { xs: "10px", sm: "0px", md: "5px", lg: "0px" }
                                 }}
                             >
                                 Methodology Used
                             </Typography>
-                            
-                                <Typography 
-                                sx={{ 
-                                    fontSize: "15px", 
-                                    flex: 1, 
-                                    columns: {xs: "1", sm: "2", md: "2", lg: "2"},
-                                    columnGap: { sm: "60px", md: "50px", lg: "50px"}, 
-                                    lineHeight: {xs: "28px", sm: "30px", md: "35px", lg: "35px"},
-                                    width: {xs: "100%", sm: "90%", md: "80%", lg: "80%"},
-                                    marginLeft: {xs: "20px", sm: "75px", md: "20px"}
-                                    /* height: "70%", */
-                                    }}>
-                                    <ul>
-                                        <li>Equine Facilitated Psychotherapy</li>
-                                        <li>Cognitive Behavioral Therapy</li>
-                                        <li>Play Therapy</li>
-                                        <li>Gottman Method Couples Therapy</li>
-                                        <li>Biofeedback</li>
-                                        <li>Solution-Focused Therapy</li>
-                                        <li>Narrative Therapy</li>
-                                        <li>Trauma-Focused Cognitive Behavioral Therapy</li>
-                                        <li>Bibliotherapy</li>
-                                        <li>Family Systems</li>
-                                        <li>Sandtray Therapy</li>
-                                        <li>Mindfulness Practices</li>
-                                        <li>Animal-Assisted Therapy</li>
-                                        <li>Positive Psychology</li>
-                                        <li>Person-Centered Therapy</li>
-                                    </ul>
-                                </Typography>
-                            
 
-                            
+                            <Typography
+                                sx={{
+                                    fontSize: "15px",
+                                    flex: 1,
+                                    columns: { xs: "1", sm: "2", md: "2", lg: "2" },
+                                    columnGap: { sm: "60px", md: "50px", lg: "50px" },
+                                    lineHeight: { xs: "28px", sm: "30px", md: "35px", lg: "35px" },
+                                    width: { xs: "100%", sm: "90%", md: "80%", lg: "80%" },
+                                    marginLeft: { xs: "20px", sm: "75px", md: "20px" }
+                                    /* height: "70%", */
+                                }}>
+                                <ul>
+                                    <li>Equine Facilitated Psychotherapy</li>
+                                    <li>Cognitive Behavioral Therapy</li>
+                                    <li>Play Therapy</li>
+                                    <li>Gottman Method Couples Therapy</li>
+                                    <li>Biofeedback</li>
+                                    <li>Solution-Focused Therapy</li>
+                                    <li>Narrative Therapy</li>
+                                    <li>Trauma-Focused Cognitive Behavioral Therapy</li>
+                                    <li>Bibliotherapy</li>
+                                    <li>Family Systems</li>
+                                    <li>Sandtray Therapy</li>
+                                    <li>Mindfulness Practices</li>
+                                    <li>Animal-Assisted Therapy</li>
+                                    <li>Positive Psychology</li>
+                                    <li>Person-Centered Therapy</li>
+                                </ul>
+                            </Typography>
+
+                            <Box
+                                sx={{
+                                    display: { xs: "block", sm: "block", md: "none", lg: "none" }
+                                }}
+                            >
+                                <ButtonComponent
+                                    buttonName="What We help with"
+                                    /* buttonEndicon={<ArrowRightAltIcon />} */
+                                    variant="contained"
+                                />
+                            </Box>
                         </Box>
                     </Grid>
                 </Grid>
@@ -200,7 +223,7 @@ function ServiceFullPage() {
 
             <Box
                 sx={{
-                    visibility: { xs: "hidden", sm: "visible" }
+                    display: { xs: 'none', sm: 'block' },
                 }}
             >
                 {/* <SubHero
