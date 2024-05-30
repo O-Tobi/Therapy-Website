@@ -69,7 +69,11 @@ function ServiceFullPage() {
                     }}
                 >
                     {/* toggling should happen from here */}
-                    <Grid item lg={6} md={6} sm={12} xs={12}>
+                    <Grid item lg={6} md={6} sm={12} xs={12}
+                    sx={{
+                        display: { xs: "block", sm: "block",}
+                    }}>
+                        
                         <Box
                             sx={{
                                 backgroundColor: "#0E3135",
