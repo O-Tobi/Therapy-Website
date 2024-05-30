@@ -1,6 +1,13 @@
 import { Button } from "@mui/material";
 
-
+/* 
+buttonColor
+buttonColor
+buttonwidth
+buttonEndicon
+buttonTextspacing
+buttonName
+*/
 
 function ButtonComponent (props) {
     return (
