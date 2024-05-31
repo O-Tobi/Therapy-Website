@@ -9,7 +9,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import SubHero from "./../Reusable Components/SubHero"
 
 function ServiceFullPage() {
-    const [showMethodology, setShowMethodology] =useState(false);
+    const [showMethodology, setShowMethodology] = useState(false);
 
     const toggleMethodology = () => {
         setShowMethodology(!showMethodology);
@@ -71,10 +71,10 @@ function ServiceFullPage() {
                 >
                     {/* toggling should happen from here */}
                     <Grid item lg={6} md={6} sm={12} xs={12}
-                    sx={{
-                        display: { xs: "block", sm: "block",}
-                    }}>
-                        
+                        sx={{
+                            display: { xs: "block", sm: "block", }
+                        }}>
+
                         <Box
                             sx={{
                                 backgroundColor: "#0E3135",
@@ -237,55 +237,82 @@ function ServiceFullPage() {
                     buttonName="Book a Virtual Session"
                     variant="contained"
                     mainInfo="Prefer a virtual therapy session?"
-                    mainInfoFontSize = {{xs:'40px', sm: '40px', md: '60px', lg: '70px' }}
+                    mainInfoFontSize={{ xs: '40px', sm: '40px', md: '60px', lg: '70px' }}
                     subInfo="If you're unable to make it to the office or not comfortable yet to speak in person, we understand."
-                    subInfoFontSize = {{xs:'13px',sm: '12px', md: '15px', lg: '17px' }}
+                    subInfoFontSize={{ xs: '13px', sm: '12px', md: '15px', lg: '17px' }}
                     subInfo1="Our telehealth services are available as a resource for you to get the therapy and counseling you deserve from the comfort of your home. With our innovative telehealth services, you’re able to get compassionate and evidence-based care in a safe therapeutic environment."
-                    subInfo1FontSize={{xs:'13px',sm: '12px', md: '15px', lg: '17px' }}
+                    subInfo1FontSize={{ xs: '13px', sm: '12px', md: '15px', lg: '17px' }}
                     justifyContent="left"
                     textAlign="left"
                     paddingLeft="50px"
-                    py= {{sm: '60px', md: '80px',lg: '80px'}}
+                    py={{ sm: '60px', md: '80px', lg: '80px' }}
                 />
             </Box>
 
             <Box
                 sx={{
                     display: { xs: 'block', sm: 'none' },
-                    marginTop: "100px"
+                    marginTop: "100px",
+                    
                 }}
             >
                 <SubHero
-                    img={Happy}   
+                    img={Happy}
                 />
 
                 <Box
-                sx={{
-                    paddingX: "30px",
-                    marginTop: "40px"
-                }}>
-                    <Typography
-                    variant="h1"
-                    component="h1"
                     sx={{
-                        fontSize: "30px",
-                        marginBottom: "25px"
-                    }}
+                        paddingX: "30px",
+                        marginTop: "40px"
+                    }}>
+                    <Typography
+                        variant="h1"
+                        component="h1"
+                        sx={{
+                            fontSize: "30px",
+                            marginBottom: "25px",
+                            fontWeight: "400",
+                            color: "#FFA337",
+                        }}
                     >
-                        Prefer a virtual therapy session? 
+                        Prefer a virtual therapy session?
                     </Typography>
 
-                    <Typography 
-                    variant="subtitle1" 
-                    gutterBottom 
-                    sx={{ 
-                        fontSize: "12px",
-                        textTransform: 'uppercase', 
-                        letterSpacing: '.1rem', 
-                        marginBottom: '20px' 
+                    <Typography
+                        variant="subtitle1"
+
+                        sx={{
+                            fontSize: "12px",
+                            textTransform: 'uppercase',
+                            letterSpacing: '.1rem',
+                            marginBottom: '20px',
+                            fontWeight: "bold",
                         }}>
                         If you're unable to make it to the office or not comfortable yet to speak in person, we understand.
                     </Typography>
+
+                    <Typography
+                        variant="subtitle1"
+
+                        sx={{
+                            fontSize: "12px",
+                            letterSpacing: '.1rem',
+                            marginBottom: '20px'
+                        }}>
+                        Our telehealth services are available as a resource for you to get the therapy and counseling you deserve from the comfort of your home. With our innovative telehealth services, you’re able to get compassionate and evidence-based care in a safe therapeutic environment.
+                    </Typography>
+
+                    <Box
+                    sx={{
+                         paddingX: '50px'
+                    }}>
+                        <ButtonComponent
+                            buttonName="What We help with"
+                            /* buttonEndicon={<ArrowRightAltIcon />} */
+                            variant="contained"
+                        />
+                    </Box>
+
                 </Box>
             </Box>
         </Box>
