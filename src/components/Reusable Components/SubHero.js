@@ -8,6 +8,9 @@ color
 mainInfo
 subInfo
 subInfo1
+mainInfoFontSize
+subInfoFontsize
+subInfo1Fontsize
  */
 
 function SubHero (props) {
@@ -15,7 +18,7 @@ function SubHero (props) {
         <Box
             sx={{
                 position: 'relative',
-                height: {xs: '70vh', sm: '70vh', md: '80vh', lg: '90vh'},
+                height: {xs: '70vh', sm: '90vh', md: '100vh', lg: '100vh'},
                 backgroundImage: `url(${props.img})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
@@ -25,7 +28,9 @@ function SubHero (props) {
                 alignItems: 'center',
                 flexDirection: 'column',
                 margin: '10px',
-                marginTop: props.marginTop
+                marginTop: props.marginTop,
+                marginBottom: props.marginBottom,
+                py: props.py
             }}
         >
             {/* Dark overlay */}
@@ -58,8 +63,10 @@ function SubHero (props) {
                     sm={8}
                     md={8}
                     lg={7}
-                    sx={{ px: {sm: '50px', md: '60px', lg: '60px'}, 
-                    color: 'white',  
+                    sx={{ 
+                        px: {sm: '50px', md: '60px', lg: '60px'}, 
+                        color: 'white',
+                        /* height: '70%' */  
                     }}>
                     
                     
@@ -68,24 +75,40 @@ function SubHero (props) {
                     component="h1" 
                     gutterBottom 
                     sx={{ 
-                        fontSize: {xs:'40px', sm: '50px', md: '60px', lg: '65px' },
+                        fontSize: props.mainInfoFontSize,
                         marginBottom: '20px' 
                         }}>
                         {props.mainInfo}
                     </Typography>
 
-                    <Typography variant="subtitle1" gutterBottom sx={{ fontSize: {xs:'13px',sm: '15px', md: '16px', lg: '17px' }, textTransform: 'uppercase', letterSpacing: '.1rem', marginBottom: '20px' }}>
+                    <Typography 
+                    variant="subtitle1" 
+                    gutterBottom 
+                    sx={{ 
+                        fontSize: props.subInfoFontSize, 
+                        textTransform: 'uppercase', 
+                        letterSpacing: '.1rem', 
+                        marginBottom: '20px' 
+                        }}>
                         {props.subInfo}
                     </Typography>
 
-                    <Typography variant="subtitle1" gutterBottom sx={{ fontSize: {xs:'13px',sm: '15px', md: '16px', lg: '17px' }, letterSpacing: '.1rem', marginBottom: '20px' }}>
+                    <Typography 
+                    variant="subtitle1" 
+                    gutterBottom 
+                    sx={{ 
+                        fontSize: props.subInfo1FontSize,  
+                        letterSpacing: '.1rem', 
+                        marginBottom: '20px' 
+                        }}>
                         {props.subInfo1}
                     </Typography>
 
                     <ButtonComponent
                     buttonName= {props.buttonName}
                     variant={props.variant}
-                    buttonColor={props.color}/>
+                    buttonColor={props.color}
+                    />
 
                 </Grid>
                     

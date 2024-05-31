@@ -1,11 +1,12 @@
 // src/components/ServiceFullPage.jsx
 
 import React, { useState } from "react";
-import { Box, Grid, Typography, } from "@mui/material";
+import { Box, Container, Grid, Typography, } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import SubHero from "./../Reusable Components/SubHero"
 
 function ServiceFullPage() {
     const [showMethodology, setShowMethodology] =useState(false);
@@ -228,19 +229,64 @@ function ServiceFullPage() {
             <Box
                 sx={{
                     display: { xs: 'none', sm: 'block' },
+                    marginTop: "150px"
                 }}
             >
-                {/* <SubHero
+                <SubHero
                     img={Happy}
                     buttonName="Book a Virtual Session"
                     variant="contained"
                     mainInfo="Prefer a virtual therapy session?"
+                    mainInfoFontSize = {{xs:'40px', sm: '40px', md: '60px', lg: '70px' }}
                     subInfo="If you're unable to make it to the office or not comfortable yet to speak in person, we understand."
+                    subInfoFontSize = {{xs:'13px',sm: '12px', md: '15px', lg: '17px' }}
                     subInfo1="Our telehealth services are available as a resource for you to get the therapy and counseling you deserve from the comfort of your home. With our innovative telehealth services, you’re able to get compassionate and evidence-based care in a safe therapeutic environment."
+                    subInfo1FontSize={{xs:'13px',sm: '12px', md: '15px', lg: '17px' }}
                     justifyContent="left"
                     textAlign="left"
-                    paddingLeft="100px"
-                /> */}
+                    paddingLeft="50px"
+                    py= {{sm: '60px', md: '80px',lg: '80px'}}
+                />
+            </Box>
+
+            <Box
+                sx={{
+                    display: { xs: 'block', sm: 'none' },
+                    marginTop: "100px"
+                }}
+            >
+                <SubHero
+                    img={Happy}   
+                />
+
+                <Box
+                sx={{
+                    paddingX: "30px",
+                    marginTop: "40px"
+                }}>
+                    <Typography
+                    variant="h1"
+                    component="h1"
+                    sx={{
+                        fontSize: "30px",
+                        marginBottom: "25px"
+                    }}
+                    >
+                        Prefer a virtual therapy session? 
+                    </Typography>
+
+                    <Typography 
+                    variant="subtitle1" 
+                    gutterBottom 
+                    sx={{ 
+                        fontSize: "12px",
+                        textTransform: 'uppercase', 
+                        letterSpacing: '.1rem', 
+                        marginBottom: '20px' 
+                        }}>
+                        If you're unable to make it to the office or not comfortable yet to speak in person, we understand.
+                    </Typography>
+                </Box>
             </Box>
         </Box>
     );

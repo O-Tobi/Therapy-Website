@@ -350,10 +350,13 @@ function About() {
             buttonName = "contact us today!"
             variant = "contained"
             mainInfo = "We Look Forward To Hearing From You!"
+            mainInfoFontSize = {{xs:'40px', sm: '50px', md: '55px', lg: '65px' }}
             subInfo = "AND HOW WE CAN HELP YOU & YOUR LOVED ONES AT ctc!"
+            subInfoFontSize = {{xs:'13px',sm: '15px', md: '16px', lg: '17px' }}
             justifyContent = "center"
             textAlign = "center"
-            marginTop={{xs: "50px", lg: "250px"}}
+            marginTop={{xs: "100px", md: "300px", lg: "250px"}}
+            marginBottom={{xs: "-150px", md: "-250px", lg: "-100px"}}
             />
 
 
