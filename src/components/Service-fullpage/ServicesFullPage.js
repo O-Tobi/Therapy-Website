@@ -6,7 +6,8 @@ import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import SubHero from "./../Reusable Components/SubHero"
+import SubHero from "./../Reusable Components/SubHero";
+import ServiceDescription from "./ServiceDescription";
 
 function ServiceFullPage() {
     const [showMethodology, setShowMethodology] = useState(false);
@@ -17,12 +18,15 @@ function ServiceFullPage() {
 
     return (
         <Box sx={{ marginBottom: "100px" }}>
+
+            {/* Hero section */}
             <ReusableHero
                 img={Happy}
                 title="Explore Our Counseling & Therapy Services"
                 mainInfo="A happy & healthy life awaits you."
             />
 
+            {/* First section containing brief explanation of why therapy is good for you */}
             <Grid
                 container
                 spacing={3}
@@ -54,7 +58,8 @@ function ServiceFullPage() {
                     </Typography>
                 </Grid>
             </Grid>
-
+                
+            {/* what we do and methodology used */}
             <Box
                 sx={{
                     marginX: "25px",
@@ -77,7 +82,7 @@ function ServiceFullPage() {
 
                         <Box
                             sx={{
-                                backgroundColor: "#0E3135",
+                                backgroundColor: "#EFFAFB",
                                 paddingX: "50px",
                                 paddingY: "10px",
                                 borderRadius: "50px",
@@ -90,7 +95,7 @@ function ServiceFullPage() {
                         >
                             <Typography
                                 sx={{
-                                    color: "#5ADBF2",
+                                    color: "#1A9CB2",
                                     fontSize: { xs: "33px", sm: "40px", md: "45px", lg: "45px" },
                                     marginTop: { xs: "30px", sm: "45px", md: "45px", lg: "60px" },
                                     marginBottom: "25px",
@@ -156,7 +161,7 @@ function ServiceFullPage() {
                         }}>
                         <Box
                             sx={{
-                                backgroundColor: "#0E3135",
+                                backgroundColor: "#B7D2631A",
                                 paddingX: "50px",
                                 paddingY: "10px",
                                 borderRadius: "50px",
@@ -169,7 +174,7 @@ function ServiceFullPage() {
                         >
                             <Typography
                                 sx={{
-                                    color: "#5ADBF2",
+                                    color: "#B7D263",
                                     fontSize: { xs: "33px", sm: "40px", md: "45px", lg: "45px" },
                                     marginTop: { xs: "30px", sm: "45px", md: "45px", lg: "60px" },
                                     marginBottom: "25px",
@@ -226,6 +231,10 @@ function ServiceFullPage() {
                 </Grid>
             </Box>
 
+            {/* detailed description of services */}
+            <ServiceDescription />
+
+            {/* second hero */}
             <Box
                 sx={{
                     display: { xs: 'none', sm: 'block' },
@@ -248,7 +257,9 @@ function ServiceFullPage() {
                     py={{ sm: '60px', md: '80px', lg: '80px' }}
                 />
             </Box>
+            
 
+            {/* second hero for xs screens */}
             <Box
                 sx={{
                     display: { xs: 'block', sm: 'none' },

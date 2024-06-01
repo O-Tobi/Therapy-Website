@@ -4,10 +4,17 @@ import ButtonComponent from "../Reusable Components/Button-component";
 
 /* 
 props
--names
+-names --- works as title for the ervices page
 -qualifications
 -specialities
 -special button
+imageWidth
+imageBorderRadius
+
+
+---------for the services page--------
+subTitle
+paragraph
 */
 
 function TherapistFullInformation(props) {
@@ -31,9 +38,9 @@ function TherapistFullInformation(props) {
                         backgroundImage: `url(${props.therapistImg})`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
-                        width: { xs: '100%', sm: '80%', md: '80%', lg: '80%' },
+                        width: props.imageWidth,
                         height: '100%',
-                        borderRadius: '20px',
+                        borderRadius: props.imageBorderRadius,
                     }} />
             </Grid>
 
@@ -56,14 +63,16 @@ function TherapistFullInformation(props) {
                     </Typography>
 
 
-                    {/* therapist locations */}
+                    {/* therapist locations and services subtitle */}
                     <Typography
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
                             lineHeight: { xs: '30px', sm: '30px', md: '40px', lg: '40px' },
-                            textAlign: 'left'
+                            textAlign: 'left',
+                            textTransform: "capitalize",
                         }}
-                    >
+                    >   
+                        {props.subTitle}
                         LOCATIONS:
                     </Typography>
 
@@ -79,7 +88,7 @@ function TherapistFullInformation(props) {
                         {props.locations}
                     </Typography>
 
-                    {/* therapist qualifications */}
+                    {/* therapist qualifications and services paragraph */}
                     <Typography
                         sx={{
                             fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px' },
@@ -87,6 +96,7 @@ function TherapistFullInformation(props) {
                             textAlign: 'left'
                         }}
                     >
+                        {props.paragraph}
                         QUALIFICATIONS:
                     </Typography>
 

@@ -316,6 +316,8 @@ function About() {
                         therapistImg={therapistData.therapistImg}
                         name={therapistData.name}
                         names={therapistData.names}
+                        imageWidth = {{ xs: '100%', sm: '80%', md: '80%', lg: '80%' }}
+                        imageBorderRadius = "40px"
                         locations={(
                             <ul>
                                 {therapistData.locations.map((location, index) => (
