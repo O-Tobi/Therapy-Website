@@ -12,7 +12,7 @@ function ServiceDescription(props) {
                 marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
                 paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
                 paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
-                marginBottom: { xs: '-350px', sm: '250px', md: '250px', lg: '450px' },
+                marginBottom: { xs: '-350px', sm: '250px', md: '250px', lg: '350px' },
             }}
         >
             {/* Image */}
@@ -24,7 +24,10 @@ function ServiceDescription(props) {
                         backgroundSize: 'cover',
                         width: { xs: '100%', sm: '80%', md: '80%', lg: '95%' },
                         height: '100%',
-                        borderRadius: props.imageBorderRadius,
+                        borderRadius: {
+                            xs: "70px 70px 0 0",
+                            sm: "60px 0 0 60px", 
+                        },
                     }}
                 />
             </Grid>
@@ -144,6 +147,7 @@ function ServiceDescription(props) {
                         buttonName={props.name}
                         variant="contained"
                         buttonColor="white"
+                        buttonWidth= {props.width}
                     />
                     )}
 
