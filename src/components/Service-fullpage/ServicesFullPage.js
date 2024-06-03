@@ -1,7 +1,7 @@
 // src/components/ServiceFullPage.jsx
 
 import React, { useState } from "react";
-import { Box, Container, Grid, Typography, } from "@mui/material";
+import { Box, Grid, Typography, } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";

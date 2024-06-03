@@ -12,7 +12,7 @@ function ServiceDescription(props) {
                 marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
                 paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
                 paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
-                marginBottom: { xs: '-350px', sm: '250px', md: '250px', lg: '350px' },
+                marginBottom: { xs: '-350px', sm: '250px', md: '400px', lg: '350px' },
             }}
         >
             {/* Image */}
