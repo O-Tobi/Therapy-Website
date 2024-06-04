@@ -1,7 +1,7 @@
 // src/components/ServiceFullPage.jsx
 
 import React, { useState } from "react";
-import { Box, Grid, Typography, } from "@mui/material";
+import { Box, Grid, Typography, Container } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";
@@ -40,8 +40,8 @@ function ServiceFullPage() {
             listTitle1: "WHY DO HORSES & THERAPY WORK?",
             list1: "Horses are highly sensitive to movement and emotion. They act as mirrors between the leader’s behaviors and inner emotions. This deeper understanding and developed sense of connection can allow clients to release any emotional barriers that could be hindering their progress in traditional therapy.",
             paragraph2: "In addition, because the horses are so aware, this allows the clients to adopt the same level of self-awareness and self-reflection. It is a constant reminder to be present in the current moment which is a useful tool at the barn and in real life. ",
-            order: {xs: 1, sm: 2},
-            order1: {xs: 2, sm: 1},
+            order: { xs: 1, sm: 2 },
+            order1: { xs: 2, sm: 1 },
             imageBorderRadius: {
                 xs: "70px 70px 0 0",
                 sm: "0 60px 60px 0",
@@ -68,42 +68,42 @@ function ServiceFullPage() {
 
     const faqs = [
         {
-            id : 1,
+            id: 1,
             question: "WHAT ARE THE BENEFITS OF TALKING TO A THERAPIST?",
             answer: "A therapist can help you process your emotions associated with many aspects and areas of your life. They are highly trained and skilled at helping you identify the feelings and emotions holding you back while providing a way through to healing."
         },
 
         {
-            id : 2,
+            id: 2,
             question: "WHAT INSURANCE DO YOU ACCEPT?",
             answer: "At JCCC we accept BCBS, Cigna, Aetna, United Healthcare, Medcost and Medicaid (AmeriHealth, HealthyBlue, UnitedHealthcare, WellCare, Carolina Complete Health). Self-pay is an option as well."
         },
 
         {
-            id : 3,
+            id: 3,
             question: "WHAT IS EQUINE FACILITATED THERAPY?",
             answer: "A great addition to traditional therapies. Equine Facilitated Therapy is a version of psychotherapy that involves bringing clients to a farm where they can groom, feed, and interact with the horses. This methodology has been used since Grecian times and develops a deep bond of trust and helps with emotional processing and self-esteem."
         },
 
         {
-            id : 4,
+            id: 4,
             question: "DO I NEED TO HAVE EXPERIENCE WITH HORSES TO PARTICIPATE?",
             answer: "No. We will teach you how to interact and care for the horses properly. You'll work alongside your therapist and certified equine specialist (ESMHL) the whole time."
         },
 
         {
-            id : 5,
+            id: 5,
             question: "WHAT IS GOTTMAN METHOD COUPLES THERAPY?",
             answer: "This method aims to increase closeness and friendship behaviors while addressing conflict productively and building a life of shared meaning together with your partner."
         },
 
         {
-            id : 6,
+            id: 6,
             question: "PLAY THERAPY IN NORTH CAROLINA? WHAT IS IT?",
             answer: "Play therapy is a structured approach in engaging children in communication that does not feel forced. It feeds their curiosity and creates a safe space for them to explore their emotions. It is a wonderful option for those struggling with verbal skills and having difficulty regulating their emotions"
         },
         {
-            id : 7,
+            id: 7,
             question: "WHAT ARE THE BENEFITS OF SELF-PAY?",
             answer: "When you pay out of pocket you have the freedom to work with anyone you like, including The Jenkins Creative Counseling Center. There are no limits to the number of sessions, you can work with us as long as you like as you make steps towards accomplishing your treatment goals."
         }
@@ -437,7 +437,7 @@ function ServiceFullPage() {
                         }}>
                         <ButtonComponent
                             buttonName="What We help with"
-                           
+
                             variant="contained"
                         />
                     </Box>
@@ -447,67 +447,36 @@ function ServiceFullPage() {
 
             {/* Frequently Asked Questions */}
             <Box
-             sx={{
-                marginTop: {xs:"60px", sm: "60px", md: "80px", lg: "100px" }
-            }}
+                sx={{
+                    marginTop: { xs: "60px", sm: "60px", md: "80px", lg: "100px" }
+                }}
             >
                 <Typography variant="h2"
                     sx={{
-                        fontSize: {xs: "33px",sm: "50px", md: "55px", lg: "60px"},
+                        fontSize: { xs: "33px", sm: "50px", md: "55px", lg: "60px" },
                         textAlign: 'center',
                         fontWeight: "400",
                         color: '#008DDA',
-                        marginBottom: {xs: "20px",sm: "20px", md: "25px", lg: "30px" }
+                        marginBottom: { xs: "20px", sm: "20px", md: "25px", lg: "30px" }
                     }}>
                     Frequently Asked Questions
                 </Typography>
             </Box>
 
             {faqs.map((faq) => {
-                return(
+                return (
                     <Box>
-                        
+
                         <FrequentlyAskedQuestions
-                        key = {faq.id}
-                        question = {faq.question} 
-                        answer = {faq.answer}
+                            key={faq.id}
+                            question={faq.question}
+                            answer={faq.answer}
                         />
-                    </Box>  
+                    </Box>
                 )
             })}
 
-<Grid
-                container
-                spacing={3}
-                sx={{
-                    paddingX: { xs: "40px", sm: "60px", md: "100px", lg: "120px" },
-                    marginY: { xs: "40px", sm: "60px", md: "80px", lg: "100px" }
-                }}
-            >
-                <Grid item lg={6} md={6} sm={6} xs={12}>
-                    <Typography
-                        variant="h3"
-                        sx={{
-                            fontSize: { xs: "35px", sm: "40px", md: "50px", lg: "60px" },
-                            color: '#008DDA'
-                        }}
-                    >
-                        Have More Questions or Concerns?
-                    </Typography>
-                </Grid>
 
-                <Grid item lg={6} md={6} sm={6} xs={12}>
-                    <Typography
-                        sx={{
-                            fontSize: { xs: "12px", sm: "12px", md: "15px", lg: "15px" },
-                            lineHeight: { xs: "25px", sm: "18px", md: "20px", lg: "40px" }
-                        }}
-                    >
-                        Therapy is certainly the new, go-to self-care method that everyone can benefit from. Whether you require short-term, brief therapy or a longer duration of treatment, therapy can provide you a renewed sense of hope, meaning, motivation, and enthusiasm to pursue your goals and confront any obstacles in your life. The healing effects of therapy will empower you with the courage and strength you need to initiate change and enjoy your best emotional health.
-                    </Typography>
-                </Grid>
-            </Grid>
-            
         </Box>
     );
 }
