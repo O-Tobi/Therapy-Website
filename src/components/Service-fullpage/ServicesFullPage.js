@@ -448,19 +448,21 @@ function ServiceFullPage() {
             {/* Frequently Asked Questions */}
             <Box
              sx={{
-                marginTop: { lg: "100px" }
+                marginTop: {xs:"60px", sm: "60px", md: "80px", lg: "100px" }
             }}
             >
                 <Typography variant="h2"
                     sx={{
+                        fontSize: {xs: "33px",sm: "50px", md: "55px", lg: "60px"},
                         textAlign: 'center',
-                        fontWeight: "350",
+                        fontWeight: "400",
                         color: '#008DDA',
-                        marginBottom: { lg: "30px" }
+                        marginBottom: {xs: "20px",sm: "20px", md: "25px", lg: "30px" }
                     }}>
                     Frequently Asked Questions
                 </Typography>
             </Box>
+
             {faqs.map((faq) => {
                 return(
                     <Box>
@@ -474,6 +476,37 @@ function ServiceFullPage() {
                 )
             })}
 
+<Grid
+                container
+                spacing={3}
+                sx={{
+                    paddingX: { xs: "40px", sm: "60px", md: "100px", lg: "120px" },
+                    marginY: { xs: "40px", sm: "60px", md: "80px", lg: "100px" }
+                }}
+            >
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: "35px", sm: "40px", md: "50px", lg: "60px" },
+                            color: '#008DDA'
+                        }}
+                    >
+                        Have More Questions or Concerns?
+                    </Typography>
+                </Grid>
+
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                    <Typography
+                        sx={{
+                            fontSize: { xs: "12px", sm: "12px", md: "15px", lg: "15px" },
+                            lineHeight: { xs: "25px", sm: "18px", md: "20px", lg: "40px" }
+                        }}
+                    >
+                        Therapy is certainly the new, go-to self-care method that everyone can benefit from. Whether you require short-term, brief therapy or a longer duration of treatment, therapy can provide you a renewed sense of hope, meaning, motivation, and enthusiasm to pursue your goals and confront any obstacles in your life. The healing effects of therapy will empower you with the courage and strength you need to initiate change and enjoy your best emotional health.
+                    </Typography>
+                </Grid>
+            </Grid>
             
         </Box>
     );

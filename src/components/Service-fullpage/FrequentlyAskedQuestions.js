@@ -1,5 +1,4 @@
 import {
-    Box,
     Typography,
     Container,
     Accordion,
@@ -8,7 +7,7 @@ import {
 
 } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
-import { PropaneSharp } from "@mui/icons-material";
+
 
 function FrequentlyAskedQuestions(props) {
     return (
@@ -17,8 +16,8 @@ function FrequentlyAskedQuestions(props) {
 
         <Container
             sx={{
-                width: { lg: "70vw" },
-                marginBottom: "50px"
+                width: {sm: "80vw", md: "80vw", lg: "70vw" },
+                marginBottom: {xs: "30px", sm: "40px", md: "50px", lg: "50px"}
 
             }}>
             <Accordion
@@ -39,6 +38,7 @@ function FrequentlyAskedQuestions(props) {
                 >
                     <Typography
                         sx={{
+                            fontSize: {xs: "11px", sm: "15", md: "15px", lg: "15px"},
                             letterSpacing: ".1rem",
                             textTransform: "uppercase"
                         }}
@@ -50,7 +50,10 @@ function FrequentlyAskedQuestions(props) {
                     sx={{
                         marginTop: "40px",
                     }}>
-                    <Typography>
+                    <Typography
+                    sx={{
+                        fontSize: {xs: "13px", sm: "15px", md: "15px", lg: "15px"},
+                    }}>
                         {props.answer}
                     </Typography>
                 </AccordionDetails>
