@@ -5,9 +5,11 @@ import { Box, Grid, Typography, } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import SubHero from "./../Reusable Components/SubHero";
 import ServiceDescription from "./ServiceDescription";
+import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
+
+
 
 
 function ServiceFullPage() {
@@ -22,7 +24,11 @@ function ServiceFullPage() {
             listTitle2: "FOR COUPLES",
             list2: "We utilize the Gottman Method to encourage intimacy and learn to manage conflict in a healthy and effective way.",
             listTitle3: "FOR CHILDREN & FAMILIES",
-            list3: "Play Therapy can be the key to unlock your child’s emotions and improve their communication skills."
+            list3: "Play Therapy can be the key to unlock your child’s emotions and improve their communication skills.",
+            imageBorderRadius: {
+                xs: "70px 70px 0 0",
+                sm: "60px 0 0 60px",
+            },
 
         },
 
@@ -33,7 +39,13 @@ function ServiceFullPage() {
             paragraph1: "Here at JCCC, we partner with Saving Grace Farm located in Salisbury, NC to give all patients access to a unique and timeless therapy that has been around for generations. Our specialized treatment and Equine Facilitated Psychotherapy in North Carolina has incredible benefits. This experiential approach has been known to help with emotional regulation, confidence, problem-solving skills, impulse control, and building trust. ",
             listTitle1: "WHY DO HORSES & THERAPY WORK?",
             list1: "Horses are highly sensitive to movement and emotion. They act as mirrors between the leader’s behaviors and inner emotions. This deeper understanding and developed sense of connection can allow clients to release any emotional barriers that could be hindering their progress in traditional therapy.",
-            paragraph2: "In addition, because the horses are so aware, this allows the clients to adopt the same level of self-awareness and self-reflection. It is a constant reminder to be present in the current moment which is a useful tool at the barn and in real life. "
+            paragraph2: "In addition, because the horses are so aware, this allows the clients to adopt the same level of self-awareness and self-reflection. It is a constant reminder to be present in the current moment which is a useful tool at the barn and in real life. ",
+            order: {xs: 1, sm: 2},
+            order1: {xs: 2, sm: 1},
+            imageBorderRadius: {
+                xs: "70px 70px 0 0",
+                sm: "0 60px 60px 0",
+            },
         },
 
 
@@ -45,7 +57,11 @@ function ServiceFullPage() {
             paragraph1: "The comfort of a caring Outpatient service with the same in-depth and caring attention as a highly acclaimed treatment facility. This is why we’ve designed our services to provide individualized treatments you need to overcome the stress in your life at any stage. Our counseling services are available to children, adolescents, adults, couples, and families. And built to give every patient a truly unique experience where they’re encouraged to rediscover themselves, heal, and grow. ",
             paragraph2: "We will go over how to handle your own stress, emotions, and day-to-day so you can better serve your clients. Therapy is a psychological approach so you have to make sure you are in your best psychological tip-top shape too! In addition, therapy is a classic blend of intuitive compassion and science-based methodologies. Finding a balance in these will be the most useful tool in becoming a successful and engaging therapist! ",
             buttonName: "send an enquiry",
-            buttonWidth: "250px"
+            buttonWidth: "250px",
+            imageBorderRadius: {
+                xs: "70px 70px 0 0",
+                sm: "60px 0 0 60px",
+            },
 
         }
     ]
@@ -189,7 +205,6 @@ function ServiceFullPage() {
                                 <ButtonComponent
                                     buttonName="Methodology Used"
                                     onClick={toggleMethodology}
-                                    /* buttonEndicon={<ArrowRightAltIcon />} */
                                     variant="contained"
                                 />
                             </Box>
@@ -263,7 +278,6 @@ function ServiceFullPage() {
                             >
                                 <ButtonComponent
                                     buttonName="What We help with"
-                                    /* buttonEndicon={<ArrowRightAltIcon />} */
                                     variant="contained"
                                 />
                             </Box>
@@ -290,6 +304,8 @@ function ServiceFullPage() {
                     list3={description.list3}
                     name={description.buttonName}
                     width={description.buttonWidth}
+                    order={description.order}
+                    order1={description.order1}
                 />
             ))}
 
@@ -378,12 +394,17 @@ function ServiceFullPage() {
                         }}>
                         <ButtonComponent
                             buttonName="What We help with"
-                            /* buttonEndicon={<ArrowRightAltIcon />} */
+                           
                             variant="contained"
                         />
                     </Box>
 
                 </Box>
+            </Box>
+
+            {/* Frequently Asked Questions */}
+            <Box>
+                <FrequentlyAskedQuestions/>
             </Box>
         </Box>
     );

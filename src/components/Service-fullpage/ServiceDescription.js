@@ -16,24 +16,21 @@ function ServiceDescription(props) {
             }}
         >
             {/* Image */}
-            <Grid item xs={12} sm={6} md={6} lg={6}>
+            <Grid item xs={12} sm={6} md={6} lg={6} sx={{ order: props.order }}>
                 <Box
                     sx={{
                         backgroundImage: `url(${props.img})`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
-                        width: { xs: '100%', sm: '80%', md: '80%', lg: '95%' },
+                        width: { xs: '100%', sm: '80%', md: '95%', lg: '95%' },
                         height: '100%',
-                        borderRadius: {
-                            xs: "70px 70px 0 0",
-                            sm: "60px 0 0 60px", 
-                        },
+                        borderRadius: props.imageBorderRadius
                     }}
                 />
             </Grid>
 
             {/* Paragraph */}
-            <Grid item xs={12} sm={6} md={6} lg={6}>
+            <Grid item xs={12} sm={6} md={6} lg={6} sx={{ order: props.order1 }} >
                 <Box>
                     <Typography
                         variant="h1"
