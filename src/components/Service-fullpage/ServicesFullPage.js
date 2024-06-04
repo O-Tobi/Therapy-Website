@@ -66,6 +66,49 @@ function ServiceFullPage() {
         }
     ]
 
+    const faqs = [
+        {
+            id : 1,
+            question: "WHAT ARE THE BENEFITS OF TALKING TO A THERAPIST?",
+            answer: "A therapist can help you process your emotions associated with many aspects and areas of your life. They are highly trained and skilled at helping you identify the feelings and emotions holding you back while providing a way through to healing."
+        },
+
+        {
+            id : 2,
+            question: "WHAT INSURANCE DO YOU ACCEPT?",
+            answer: "At JCCC we accept BCBS, Cigna, Aetna, United Healthcare, Medcost and Medicaid (AmeriHealth, HealthyBlue, UnitedHealthcare, WellCare, Carolina Complete Health). Self-pay is an option as well."
+        },
+
+        {
+            id : 3,
+            question: "WHAT IS EQUINE FACILITATED THERAPY?",
+            answer: "A great addition to traditional therapies. Equine Facilitated Therapy is a version of psychotherapy that involves bringing clients to a farm where they can groom, feed, and interact with the horses. This methodology has been used since Grecian times and develops a deep bond of trust and helps with emotional processing and self-esteem."
+        },
+
+        {
+            id : 4,
+            question: "DO I NEED TO HAVE EXPERIENCE WITH HORSES TO PARTICIPATE?",
+            answer: "No. We will teach you how to interact and care for the horses properly. You'll work alongside your therapist and certified equine specialist (ESMHL) the whole time."
+        },
+
+        {
+            id : 5,
+            question: "WHAT IS GOTTMAN METHOD COUPLES THERAPY?",
+            answer: "This method aims to increase closeness and friendship behaviors while addressing conflict productively and building a life of shared meaning together with your partner."
+        },
+
+        {
+            id : 6,
+            question: "PLAY THERAPY IN NORTH CAROLINA? WHAT IS IT?",
+            answer: "Play therapy is a structured approach in engaging children in communication that does not feel forced. It feeds their curiosity and creates a safe space for them to explore their emotions. It is a wonderful option for those struggling with verbal skills and having difficulty regulating their emotions"
+        },
+        {
+            id : 7,
+            question: "WHAT ARE THE BENEFITS OF SELF-PAY?",
+            answer: "When you pay out of pocket you have the freedom to work with anyone you like, including The Jenkins Creative Counseling Center. There are no limits to the number of sessions, you can work with us as long as you like as you make steps towards accomplishing your treatment goals."
+        }
+    ]
+
 
     const [showMethodology, setShowMethodology] = useState(false);
 
@@ -403,9 +446,35 @@ function ServiceFullPage() {
             </Box>
 
             {/* Frequently Asked Questions */}
-            <Box>
-                <FrequentlyAskedQuestions/>
+            <Box
+             sx={{
+                marginTop: { lg: "100px" }
+            }}
+            >
+                <Typography variant="h2"
+                    sx={{
+                        textAlign: 'center',
+                        fontWeight: "350",
+                        color: '#008DDA',
+                        marginBottom: { lg: "30px" }
+                    }}>
+                    Frequently Asked Questions
+                </Typography>
             </Box>
+            {faqs.map((faq) => {
+                return(
+                    <Box>
+                        
+                        <FrequentlyAskedQuestions
+                        key = {faq.id}
+                        question = {faq.question} 
+                        answer = {faq.answer}
+                        />
+                    </Box>  
+                )
+            })}
+
+            
         </Box>
     );
 }

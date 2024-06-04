@@ -8,104 +8,56 @@ import {
 
 } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
+import { PropaneSharp } from "@mui/icons-material";
 
-function FrequentlyAskedQuestions() {
+function FrequentlyAskedQuestions(props) {
     return (
-        <Box
-            sx={{
-                marginTop: { lg: "100px" }
-            }}>
-            <Typography variant="h2"
-                sx={{
-                    textAlign: 'center',
-                    fontWeight: "350",
-                    color: '#008DDA',
-                    marginBottom: { lg: "30px" }
-                }}>
-                Frequently Asked Questions
-            </Typography>
 
-            <Container
+
+
+        <Container
             sx={{
-                width: {lg: "70vw"},
-                
+                width: { lg: "70vw" },
+                marginBottom: "50px"
+
             }}>
-                <Accordion
+            <Accordion
                 sx={{
                     border: 'none',
                     boxShadow: 'none',
                 }}>
-                    <AccordionSummary
-                        expandIcon={<AddIcon />}
-                        aria-controls="panel1-content"
-                        id="panel1-header"
+                <AccordionSummary
+                    expandIcon={<AddIcon sx={{ fontSize: '40px',color: '#FFA337' }} />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                    sx={{
+                        borderRadius: "50px",
+                        height: "90px",
+                        borderBottom: "none",
+                        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.5)'
+                    }}
+                >
+                    <Typography
                         sx={{
-                            borderRadius: "50px",
-                            height: "90px",
-                            borderBottom: "none",
-                            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.5)'
+                            letterSpacing: ".1rem",
+                            textTransform: "uppercase"
                         }}
                     >
-                        <Typography 
-                        sx= {{
-                            letterSpacing: ".1rem"
-                            }}
-                            >
-                                WHAT ARE THE BENEFITS OF TALKING TO A THERAPIST?
-                            </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails
+                        {props.question}
+                    </Typography>
+                </AccordionSummary>
+                <AccordionDetails
                     sx={{
-                        marginTop: "50px",
+                        marginTop: "40px",
                     }}>
-                        <Typography>
-                            A therapist can help you process your emotions associated 
-                            with many aspects and areas of your life. They are highly trained and skilled at 
-                            helping you identify the feelings and emotions holding you back while providing a way through to healing. 
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                
-            </Container>
+                    <Typography>
+                        {props.answer}
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
 
-            {/* <Container
-            sx={{
-                width: {lg: "70vw"},
-                
-            }}>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<AddIcon />}
-                        aria-controls="panel1-content"
-                        id="panel1-header"
-                        sx={{
-                            backgroundColor: "#008DDA",
-                            borderRadius: "50px",
-                            height: "70px",
-                        }}
-                    >
-                        <Typography 
-                        sx= {{
-                            letterSpacing: ".1rem"
-                            }}
-                            >
-                                WHAT ARE THE BENEFITS OF TALKING TO A THERAPIST?
-                            </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails
-                    sx={{
-                        marginTop: "20px",
-                    }}>
-                        <Typography>
-                            A therapist can help you process your emotions associated 
-                            with many aspects and areas of your life. They are highly trained and skilled at 
-                            helping you identify the feelings and emotions holding you back while providing a way through to healing. 
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                
-            </Container> */}
-        </Box>
+        </Container>
+
     );
 };
 
