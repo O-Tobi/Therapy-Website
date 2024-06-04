@@ -8,6 +8,7 @@ import ButtonComponent from "../Reusable Components/Button-component";
 import SubHero from "./../Reusable Components/SubHero";
 import ServiceDescription from "./ServiceDescription";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
+import Guide from "../Guide/Guide";
 
 
 
@@ -475,6 +476,15 @@ function ServiceFullPage() {
                     </Box>
                 )
             })}
+
+            {/* guide here */}
+            <Box
+            sx={{
+                marginTop: {md: "60px", lg: "50px"},
+                marginBottom: {md: "-100px"}
+            }}>
+                <Guide/>
+            </Box>
 
 
         </Box>
