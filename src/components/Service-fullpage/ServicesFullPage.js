@@ -190,8 +190,7 @@ function ServiceFullPage() {
                                 alignItems: "center",
                                 display: "flex",
                                 flexDirection: "column",
-                                /* justifyContent: "space-between", */
-                                height: "100%"
+                                height: "100%",
                             }}
                         >
                             <Typography
@@ -476,30 +475,36 @@ function ServiceFullPage() {
                 )
             })}
 
-
-
-           {/*  <Box
-            sx={{
-                width: "100%",
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundColor: "red"
-            }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    paddingX: { xs: '10px', sm: '12px', md: '160px', lg: '250px' },
+                }}
+            >
                 <Grid
                     container
                     spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
                 >
                     <Grid
                         item
                         xs={12}
                         sm={12}
                         md={6}
-                        lg={6}>
+                        lg={6}
+                    >
                         <Typography
                             variant="h1"
                             sx={{
-                                fontSize: { xs: "30px", sm: "45px", md: "45px", lg: "45px" }
-                            }}>
+                                fontSize: { xs: '30px', sm: '45px', md: '40px', lg: '45px' },
+                                textAlign: { xs: "center", sm: "left" },
+                                color: "#008DDA",
+                                fontWeight: 350,
+                            }}
+                        >
                             Have More Questions or Concerns?
                         </Typography>
                     </Grid>
@@ -509,64 +514,18 @@ function ServiceFullPage() {
                         xs={12}
                         sm={12}
                         md={6}
-                        lg={6}>
+                        lg={6}
+                        display="flex"
+                        justifyContent="center"
+                    >
                         <ButtonComponent
                             buttonName="contact us today"
-                            variant="contained" />
+                            variant="contained"
+                        />
                     </Grid>
                 </Grid>
-            </Box> */}
+            </Box>
 
-            <Box
-      sx={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingX: {xs:'10px',sm: '12px', md: '160px', lg: '250px' },
-      }}
-    >
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"  // Centers grid items horizontally
-        alignItems="center"
-      >
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-        >
-          <Typography
-            variant="h1"
-            sx={{
-              fontSize: { xs: '30px', sm: '45px', md: '40px', lg: '45px' },
-              textAlign: {xs: "center", sm: "left"},
-              color: "#008DDA"
-            }}
-          >
-            Have More Questions or Concerns?
-          </Typography>
-        </Grid>
-
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          display="flex"
-          justifyContent="center" // Centers the ButtonComponent horizontally within its grid item
-        >
-          <ButtonComponent
-            buttonName="contact us today"
-            variant="contained"
-          />
-        </Grid>
-      </Grid>
-    </Box>
-  
 
             {/* guide here */}
             <Box
