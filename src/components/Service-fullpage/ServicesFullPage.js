@@ -1,7 +1,7 @@
 // src/components/ServiceFullPage.jsx
 
 import React, { useState } from "react";
-import { Box, Grid, Typography, Container } from "@mui/material";
+import { Box, Grid, Typography, } from "@mui/material";
 import ReusableHero from "../Reusable Components/ReusableHero";
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";
@@ -467,7 +467,6 @@ function ServiceFullPage() {
             {faqs.map((faq) => {
                 return (
                     <Box>
-
                         <FrequentlyAskedQuestions
                             key={faq.id}
                             question={faq.question}
@@ -477,13 +476,104 @@ function ServiceFullPage() {
                 )
             })}
 
+
+
+           {/*  <Box
+            sx={{
+                width: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "red"
+            }}>
+                <Grid
+                    container
+                    spacing={2}
+                >
+                    <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={6}
+                        lg={6}>
+                        <Typography
+                            variant="h1"
+                            sx={{
+                                fontSize: { xs: "30px", sm: "45px", md: "45px", lg: "45px" }
+                            }}>
+                            Have More Questions or Concerns?
+                        </Typography>
+                    </Grid>
+
+                    <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={6}
+                        lg={6}>
+                        <ButtonComponent
+                            buttonName="contact us today"
+                            variant="contained" />
+                    </Grid>
+                </Grid>
+            </Box> */}
+
+            <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingX: {xs:'10px',sm: '12px', md: '160px', lg: '250px' },
+      }}
+    >
+      <Grid
+        container
+        spacing={2}
+        justifyContent="center"  // Centers grid items horizontally
+        alignItems="center"
+      >
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+        >
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { xs: '30px', sm: '45px', md: '40px', lg: '45px' },
+              textAlign: {xs: "center", sm: "left"}
+            }}
+          >
+            Have More Questions or Concerns?
+          </Typography>
+        </Grid>
+
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          display="flex"
+          justifyContent="center" // Centers the ButtonComponent horizontally within its grid item
+        >
+          <ButtonComponent
+            buttonName="contact us today"
+            variant="contained"
+          />
+        </Grid>
+      </Grid>
+    </Box>
+  
+
             {/* guide here */}
             <Box
-            sx={{
-                marginTop: {md: "60px", lg: "50px"},
-                marginBottom: {md: "-100px"}
-            }}>
-                <Guide/>
+                sx={{
+                    marginTop: { md: "60px", lg: "50px" },
+                    marginBottom: { md: "-100px" }
+                }}>
+                <Guide />
             </Box>
 
 
