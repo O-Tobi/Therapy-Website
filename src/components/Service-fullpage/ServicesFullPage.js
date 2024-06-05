@@ -542,7 +542,8 @@ function ServiceFullPage() {
             variant="h1"
             sx={{
               fontSize: { xs: '30px', sm: '45px', md: '40px', lg: '45px' },
-              textAlign: {xs: "center", sm: "left"}
+              textAlign: {xs: "center", sm: "left"},
+              color: "#008DDA"
             }}
           >
             Have More Questions or Concerns?
