@@ -9,7 +9,7 @@ import SubHero from "./../Reusable Components/SubHero";
 import ServiceDescription from "./ServiceDescription";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
 import Guide from "../Guide/Guide";
-
+import Idanwo from "./idanwo";
 
 
 
@@ -114,8 +114,8 @@ function ServiceFullPage() {
     const [showMethodology, setShowMethodology] = useState(false);
 
     const toggleMethodology = () => {
-        setShowMethodology(!showMethodology);
-    }
+        setShowMethodology(prevShowMethodology => !prevShowMethodology)
+    };
 
     return (
         <Box sx={{ marginBottom: "100px" }}>
@@ -178,7 +178,11 @@ function ServiceFullPage() {
                     {/* toggling should happen from here */}
                     <Grid item lg={6} md={6} sm={12} xs={12}
                         sx={{
-                            display: { xs: "block", sm: "block", }
+                            display: { 
+                                xs: showMethodology ? "block": "none", 
+                                sm: showMethodology ? "block" : "none",
+                                md: "block",	 
+                            }
                         }}>
 
                         <Box
@@ -255,9 +259,13 @@ function ServiceFullPage() {
                     </Grid>
 
                     <Grid item lg={6} md={6} sm={12} xs={12}
-                        sx={{
-                            display: { xs: "none", sm: "none", md: "block", }
-                        }}>
+                       sx={{
+                        display: { 
+                            xs: showMethodology ? "none": "block", 
+                            sm: showMethodology ? "none" : "block",
+                            md: "block",	 
+                        }
+                    }}>
                         <Box
                             sx={{
                                 backgroundColor: "#B7D2631A",
@@ -322,6 +330,8 @@ function ServiceFullPage() {
                                 <ButtonComponent
                                     buttonName="What We help with"
                                     variant="contained"
+                                    buttonClick= {toggleMethodology}
+
                                 />
                             </Box>
                         </Box>
@@ -499,8 +509,8 @@ function ServiceFullPage() {
                         <Typography
                             variant="h1"
                             sx={{
-                                fontSize: { xs: '30px', sm: '45px', md: '40px', lg: '45px' },
-                                textAlign: { xs: "center", sm: "left" },
+                                fontSize: { xs: '30px', sm: '40px', md: '40px', lg: '45px' },
+                                textAlign: { xs: "center", sm: "center", md: "left", lg: "left" },
                                 color: "#008DDA",
                                 fontWeight: 350,
                             }}
@@ -535,6 +545,8 @@ function ServiceFullPage() {
                 }}>
                 <Guide />
             </Box>
+
+            <Idanwo/>
 
 
         </Box>
