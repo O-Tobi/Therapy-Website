@@ -10,7 +10,7 @@ import ServiceDescription from "./ServiceDescription";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
 import Guide from "../Guide/Guide";
 import Idanwo from "./idanwo";
-
+import WestIcon from '@mui/icons-material/West';
 
 
 function ServiceFullPage() {
@@ -171,16 +171,14 @@ function ServiceFullPage() {
                     spacing={2}
                     sx={{
                         justifyItems: "self",
-
-
                     }}
                 >
                     {/* toggling should happen from here */}
                     <Grid item lg={6} md={6} sm={12} xs={12}
                         sx={{
                             display: { 
-                                xs: showMethodology ? "block": "none", 
-                                sm: showMethodology ? "block" : "none",
+                                xs: showMethodology ? "none": "block", 
+                                sm: showMethodology ? "none": "block",
                                 md: "block",	 
                             }
                         }}>
@@ -251,8 +249,8 @@ function ServiceFullPage() {
                             >
                                 <ButtonComponent
                                     buttonName="Methodology Used"
-                                    onClick={toggleMethodology}
                                     variant="contained"
+                                    buttonClick= {toggleMethodology}
                                 />
                             </Box>
                         </Box>
@@ -261,8 +259,8 @@ function ServiceFullPage() {
                     <Grid item lg={6} md={6} sm={12} xs={12}
                        sx={{
                         display: { 
-                            xs: showMethodology ? "none": "block", 
-                            sm: showMethodology ? "none" : "block",
+                            xs: showMethodology ? "block": "none", 
+                            sm: showMethodology ? "block" : "none",
                             md: "block",	 
                         }
                     }}>
@@ -328,8 +326,8 @@ function ServiceFullPage() {
                                 }}
                             >
                                 <ButtonComponent
-                                    buttonName="What We help with"
-                                    variant="contained"
+                                    /* buttonName="What We help with" */
+                                    buttonEndicon= {<WestIcon/>}
                                     buttonClick= {toggleMethodology}
 
                                 />
@@ -447,7 +445,6 @@ function ServiceFullPage() {
                         }}>
                         <ButtonComponent
                             buttonName="What We help with"
-
                             variant="contained"
                         />
                     </Box>
@@ -546,7 +543,7 @@ function ServiceFullPage() {
                 <Guide />
             </Box>
 
-            <Idanwo/>
+            
 
 
         </Box>

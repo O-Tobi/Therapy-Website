@@ -140,12 +140,14 @@ function ServiceDescription(props) {
                     )}
 
                     {props.name && (
-                        <ButtonComponent
-                        buttonName={props.name}
-                        variant="contained"
-                        buttonColor="white"
-                        buttonWidth= {props.width}
-                    />
+                        <Box>
+                            <ButtonComponent
+                            buttonName={props.name}
+                            variant="contained"
+                            buttonColor="white"
+                            buttonWidth= {props.width}
+                            />
+                        </Box>
                     )}
 
                     
