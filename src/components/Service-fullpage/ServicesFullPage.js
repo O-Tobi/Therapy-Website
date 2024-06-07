@@ -9,7 +9,6 @@ import SubHero from "./../Reusable Components/SubHero";
 import ServiceDescription from "./ServiceDescription";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
 import Guide from "../Guide/Guide";
-import Idanwo from "./idanwo";
 import WestIcon from '@mui/icons-material/West';
 
 
