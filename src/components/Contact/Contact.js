@@ -1,5 +1,6 @@
 import { Box, Typography, Grid, } from "@mui/material";
 import Happy from './../../assets/happy_family.jpg';
+import ContactForm from "./ContactForm";
 
 
 function Contact() {
@@ -81,7 +82,7 @@ function Contact() {
                                     backgroundColor: '#FB6D48',
                                     width: { xs: '100%', sm: '.5vw', md: '.5vw', lg: '.5vw' },
                                     height: { xs: '5px', sm: '100%', md: '100%', lg: '100%' },
-                                    marginBottom: { xs: '20px', },
+                                    marginBottom: { xs: '-0px', },
 
                                 }}></Box>
                         </Grid>
@@ -113,11 +114,11 @@ function Contact() {
             container
             spacing={2}
             sx={{
-                height: { xs: '1000px', sm: '70vh', md: '80vh', lg: '90vh' },
+                height: { xs: '1500px', sm: '70vh', md: '80vh', lg: '90vh' },
                 marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
                 paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
                 paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
-                marginBottom: { xs: '-250px', sm: '250px', md: '250px', lg: '120px' },
+                marginBottom: { xs: '150px', sm: '250px', md: '600px', lg: '600px' },
 
             }}>
 
@@ -137,7 +138,7 @@ function Contact() {
             
             {/* contact form */}
             <Grid item xs={12} sm={6} md={6} lg={6}>
-                
+                <ContactForm />
             </Grid>
         </Grid>
         </Box>
