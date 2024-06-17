@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Box, TextField, FormControlLabel, Typography, RadioGroup, Radio } from "@mui/material";
+import ButtonComponent from "../Reusable Components/Button-component";
 
 function ContactForm () {
     return (
@@ -18,14 +19,14 @@ function ContactForm () {
             }}
             
             validationSchema={Yup.object({
-                name: Yup.string().required(''),
-                email: Yup.string().email('Invalid email address').required('Required'),
+                name: Yup.string().required('Name is required'),
+                email: Yup.string().email('Invalid email address').required('email is required'),
                 phone: Yup.number().required('Required').positive().integer(),
-                location: Yup.string().required('Required'),
+                location: Yup.string().required('Location is required'),
                 preferredContactMethod: Yup.string().required('Required'),
                 insuranceProvider: Yup.string(),
-                howDidYouHearAboutus: Yup.string().required('Required'),
-                howCanWeHelpYou: Yup.string().required('Required'),
+                howDidYouHearAboutus: Yup.string().required(''),
+                howCanWeHelpYou: Yup.string().required(''),
 
             })}
 
@@ -153,10 +154,20 @@ function ContactForm () {
                    <ErrorMessage name="How can we help you" />
                  </Box>
                  
-                 
+                 <Box
+                 sx={{
+                  display: 'flex',	
+                  justifyContent: 'center',
+                  alignContent: 'center',
+                 }}>
+                 <ButtonComponent
+                  buttonName = "send you enquiry"
+                  variant = "contained"
+                  /> 
+                 </Box>
                </Form>
             )}
-                
+              
             </Formik>
         </Box>
     )
