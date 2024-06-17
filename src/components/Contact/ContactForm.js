@@ -34,23 +34,55 @@ function ContactForm () {
             {({isSubmitting}) => (
                  <Form>
                  <Box marginBottom={2}>
-                   <Typography variant="h6">FULL NAME*</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}>
+                    FULL NAME*
+                    </Typography>
                    <Field as={TextField} name="name" fullWidth />
                    <ErrorMessage name="name" />
                  </Box>
+
+
                  <Box marginBottom={2}>
-                   <Typography variant="h6">EMAIL ADDRESS*</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}
+                   >
+                    EMAIL ADDRESS*
+                    </Typography>
                    <Field as={TextField} name="email" fullWidth />
                    <ErrorMessage name="email" />
                  </Box>
+
+
                  <Box marginBottom={2}>
-                   <Typography variant="h6">PHONE NUMBER*</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}
+                   >
+                    PHONE NUMBER*
+                    </Typography>
                    <Field as={TextField} name="number" type="number" fullWidth />
                    <ErrorMessage name="phone number" />
                  </Box>
 
+
                  <Box marginBottom={2}>
-                   <Typography variant="h6">PREFERRED METHOD OF CONTACT?*</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}
+                   >
+                    PREFERRED METHOD OF CONTACT?*
+                    </Typography>
                    <Field name="contactMethod">
                      {({ field }) => (
                        <RadioGroup {...field}>
@@ -63,7 +95,14 @@ function ContactForm () {
                  </Box>
 
                  <Box marginBottom={2}>
-                   <Typography variant="h6">DO YOU LIVE IN NORTH CAROLINA?*</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}
+                   >
+                    DO YOU LIVE IN NORTH CAROLINA?*
+                    </Typography>
                    <Field name="location">
                      {({ field }) => (
                        <RadioGroup {...field}>
@@ -76,19 +115,40 @@ function ContactForm () {
                  </Box>
 
                  <Box marginBottom={2}>
-                   <Typography variant="h6">IF APPLICABLE, WHO IS YOUR INSURANCE PROVIDER?</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}
+                   >
+                    IF APPLICABLE, WHO IS YOUR INSURANCE PROVIDER?
+                    </Typography>
                    <Field as={TextField} name="feedback" fullWidth />
                    <ErrorMessage name="feedback" />
                  </Box>
 
                  <Box marginBottom={2}>
-                   <Typography variant="h6">HOW DID YOU HEAR ABOUT US?</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}
+                   >
+                    HOW DID YOU HEAR ABOUT US?
+                    </Typography>
                    <Field as={TextField} name="howDidYouHearAboutus" fullWidth />
                    <ErrorMessage name="How did you hear about us" />
                  </Box>
 
                  <Box marginBottom={2}>
-                   <Typography variant="h6">HOW CAN WE HELP YOU?*</Typography>
+                   <Typography 
+                   variant="h6"
+                   sx={{
+                    fontSize: {xs: '14px', sm: '14px', md: '16px', lg: '16px'}
+                   }}
+                   >
+                    HOW CAN WE HELP YOU?*
+                    </Typography>
                    <Field as={TextField} name="howCanWeHelpYou" multiline rows={4} fullWidth />
                    <ErrorMessage name="How can we help you" />
                  </Box>
