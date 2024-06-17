@@ -6,7 +6,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 
 import CallToAction from '../Call-to-action/CallToAction';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, Link } from 'react-router-dom';
 
 const pages = ['Home', 'About', 'Services', 'Blog'];
 
@@ -61,7 +61,7 @@ function Header() {
                                 {pages.map((page) => (
                                     <MenuItem key={page} onClick={handleCloseNavMenu}>
                                         <Typography textAlign="center">
-                                            <NavLink to= {page === 'Home' ? '/' : `/${page.toLowerCase()}`}/* {`${page.toLowerCase()}`} */>
+                                            <NavLink to= {page === 'Home' ? '/' : `/${page.toLowerCase()}`}>
                                                 {page}
                                             </NavLink>
                                         </Typography>
@@ -118,7 +118,11 @@ function Header() {
                                         color: 'black',
                                         borderColor: 'black',
                                     }}
-                                    variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                                    variant="outlined" 
+                                    endIcon={<ArrowRightAltIcon />}
+                                    component={Link}
+                                    to="/contact"
+                                    >
                                     Send Enquiry
                                 </Button>
                                 <IconButton

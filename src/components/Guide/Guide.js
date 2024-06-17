@@ -2,6 +2,7 @@ import { Box, Typography, Grid, Button } from '@mui/material'
 import Happy from './../../assets/happy_family.jpg'
 import GuideSteps from './GuideSteps';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { Link } from 'react-router-dom';
 
 
 
@@ -112,7 +113,10 @@ function Guide() {
           marginBottom: '30px',
 
         }}>
-        <Button variant="contained"
+        <Button 
+        variant="contained"
+        component= {Link}
+        to = "/contact"
           endIcon={<ArrowRightAltIcon />}
           sx={{
             fontSize: { xs: '.7rem', sm: '.7rem', md: '1rem', lg: '1rem' },

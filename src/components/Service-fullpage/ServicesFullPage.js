@@ -10,6 +10,7 @@ import ServiceDescription from "./ServiceDescription";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
 import Guide from "../Guide/Guide";
 import WestIcon from '@mui/icons-material/West';
+import { Link } from "react-router-dom";
 
 
 function ServiceFullPage() {
@@ -272,7 +273,6 @@ function ServiceFullPage() {
                                 alignItems: "center",
                                 display: "flex",
                                 flexDirection: "column",
-                                /* justifyContent: "space-between", */
                                 height: "100%"
                             }}
                         >
@@ -527,6 +527,8 @@ function ServiceFullPage() {
                         <ButtonComponent
                             buttonName="contact us today"
                             variant="contained"
+                            component= {Link}
+                            to= "/contact"
                         />
                     </Grid>
                 </Grid>
