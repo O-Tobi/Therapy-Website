@@ -13,8 +13,7 @@ function Contact() {
                     flexDirection: 'column',
                     height: { xs: '1000px', sm: '600px', md: '800px', lg: '800px' },
                     marginTop: '30px',
-
-
+                    marginBottom: {xs: '-250px', sm: '50px'}
                 }}>
 
                 <Box
@@ -118,7 +117,7 @@ function Contact() {
                 marginTop: { xs: '10px', sm: '30px', md: '40px', lg: '40px' },
                 paddingY: { xs: '20px', sm: '30px', md: '40px', lg: '60px' },
                 paddingX: { xs: '10px', sm: '20px', md: '30px', lg: '40px' },
-                marginBottom: { xs: '150px', sm: '250px', md: '600px', lg: '600px' },
+                marginBottom: { xs: '50px', sm: '600px', md: '600px', lg: '600px' },
 
             }}>
 
@@ -130,14 +129,20 @@ function Contact() {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         width: '100%',
-                        height: '100%',
+                        height: {xs: '350px', sm: '100%', md: '100%', lg: '100%'},
                         borderRadius: "40px",
                     }} />
             </Grid>
 
             
             {/* contact form */}
-            <Grid item xs={12} sm={6} md={6} lg={6}>
+            <Grid 
+            item 
+            xs={12} 
+            sm={6} 
+            md={6} 
+            lg={6}
+            >
                 <ContactForm />
             </Grid>
         </Grid>
