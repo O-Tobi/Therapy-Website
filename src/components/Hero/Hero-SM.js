@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import ButtonComponent from "../Reusable Components/Button-component";
+import { Link } from "react-router-dom";
 
 function HeroSm() {
     return (
@@ -54,6 +55,8 @@ function HeroSm() {
                         buttonName="view our services"
                         variant="contained"
                         buttonColor="white"
+                        buttonComponent = {Link}
+                        buttonLink = "/services"
                     />
 
                 </Grid>

@@ -1,7 +1,8 @@
 import { Container, Box} from "@mui/material";
 import AboutService from "./About-Service";
 import ServiceCard from "./Service-Card";
-import Happy from './../../assets/happy_family.jpg'
+import Happy from './../../assets/happy_family.jpg';
+import { Link } from "react-router-dom";
 
 
 function Service () {
@@ -55,6 +56,10 @@ function Service () {
                                         cardText={cardProp.cardText}
                                         cardAlt={cardProp.cardAlt}
                                         buttonColor={cardProp.buttonColor}
+                                        buttonComponent = {Link}
+                                        buttonLink = "/services"
+
+
                                     />
                                 ))}
             </Container>

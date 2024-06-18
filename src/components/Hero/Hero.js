@@ -1,6 +1,7 @@
 import { Typography, Box, Grid } from '@mui/material';
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from '../Reusable Components/Button-component';
+import { Link } from 'react-router-dom';
 
 function Hero() {
     return (
@@ -74,6 +75,8 @@ function Hero() {
                         buttonName="view our services"
                         variant="contained"
                         buttonColor="white"
+                        buttonComponent = {Link}
+                        buttonLink = "/services"
                     />
 
                 </Grid>

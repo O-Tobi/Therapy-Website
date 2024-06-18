@@ -13,8 +13,8 @@ function ButtonComponent(props) {
     return (
         <Button 
             variant={props.variant}
-            component = {props.component}
-            to = {props.link} /* I'll continue from here */
+            component = {props.buttonComponent}
+            to = {props.buttonLink} /* I'll continue from here */
             sx={{
                 fontSize: {xs: '11px', sm: '12px', md: '13px', lg: '14px'},
                 color: props.buttonColor,
