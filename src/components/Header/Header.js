@@ -126,6 +126,8 @@ function Header() {
                                     Send Enquiry
                                 </Button>
                                 <IconButton
+                                    component={Link}
+                                    to="/contact"
                                     sx={{
                                         display: { xs: 'flex', md: 'none' }
                                     }}>
