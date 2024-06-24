@@ -8,7 +8,7 @@ import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import CallToAction from '../Call-to-action/CallToAction';
 import { NavLink, Outlet, Link } from 'react-router-dom';
 
-const pages = ['Home', 'About', 'Services', 'Blog'];
+const pages = ['Home', 'About', 'Services',];
 
 function Header() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);

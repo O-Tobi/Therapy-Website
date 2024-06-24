@@ -527,8 +527,8 @@ function ServiceFullPage() {
                         <ButtonComponent
                             buttonName="contact us today"
                             variant="contained"
-                            component= {Link}
-                            to= "/contact"
+                            buttonComponent= {Link}
+                            buttonLink= "/contact"
                         />
                     </Grid>
                 </Grid>

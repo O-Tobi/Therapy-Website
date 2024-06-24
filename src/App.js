@@ -6,7 +6,6 @@ import PatientRight from './components/Patient-right/PatientRight';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import ServiceFullPage from './components/Service-fullpage/ServicesFullPage';
-import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import { Route, Routes } from 'react-router-dom';
 
@@ -18,7 +17,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<ServiceFullPage />} />
-        <Route path="blog" element={<Blog />} />
         <Route path="contact" element= {<Contact />} />
       </Routes>
       <PatientRight />
