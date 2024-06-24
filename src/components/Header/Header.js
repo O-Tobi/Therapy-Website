@@ -54,7 +54,7 @@ function Header() {
                             href="#app-bar-with-responsive-menu"
                             sx={{
                                 mr: 2,
-                                display: 'flex',
+                                /* display: 'flex', */
                                 flexGrow: 1,
                                 fontFamily: 'monospace',
                                 fontWeight: 700,
