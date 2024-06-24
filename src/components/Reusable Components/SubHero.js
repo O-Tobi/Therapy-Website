@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import ButtonComponent from "./Button-component";
+import { Link } from "react-router-dom";
 
 /* img
 buttonName
@@ -108,6 +109,9 @@ function SubHero (props) {
                     buttonName= {props.buttonName}
                     variant={props.variant}
                     buttonColor={props.color}
+                    buttonComponent ={Link}
+                    buttonLink = "/contact"
+                   
                     />
 
                 </Grid>

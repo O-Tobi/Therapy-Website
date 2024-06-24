@@ -3,6 +3,7 @@ import ReusableHero from "../Reusable Components/ReusableHero";
 import TherapistFullInformation from "./Therapist-full-information";
 import Happy from './../../assets/happy_family.jpg'
 import SubHero from "../Reusable Components/SubHero";
+import { Link } from "react-router-dom";
 
 function About() {
 
