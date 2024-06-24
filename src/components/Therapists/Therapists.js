@@ -3,6 +3,7 @@ import TherapistIntro from "./Therapist-Intro";
 import TherapistAvatar from "./Therapists-Avatar";
 import Happy from './../../assets/happy_family.jpg';
 import ButtonComponent from "../Reusable Components/Button-component";
+import { Link } from "react-router-dom";
 
 function Therapists() {
     const avatarProps = [
@@ -64,6 +65,8 @@ function Therapists() {
                         buttonName="Get to Know us"
                         variant="contained"
                         buttonColor="white"
+                        buttonComponent={Link}
+                        buttonLink="/about"
                     />
             </Box>
 

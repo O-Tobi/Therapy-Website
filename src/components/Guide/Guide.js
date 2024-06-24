@@ -116,7 +116,7 @@ function Guide() {
         <Button 
         variant="contained"
         component= {Link}
-        to = "/contact"
+        to = "/about"
           endIcon={<ArrowRightAltIcon />}
           sx={{
             fontSize: { xs: '.7rem', sm: '.7rem', md: '1rem', lg: '1rem' },

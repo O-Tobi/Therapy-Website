@@ -51,6 +51,8 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
           color="primary"
           fullWidth
           endIcon={<ArrowRightAltIcon />}
+          component = {props.buttonComponent} /* Check back */
+          to = {props.buttonLink}
           sx={{
             letterSpacing: '.3rem',
             fontSize: '.5rem',
